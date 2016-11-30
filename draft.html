@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        #target {
+            width: 476px;
+            height: 96px;
+        }
+    </style>
+    <script>
+
+        (function (window) {
+            window.animate = (function () {
+                var _example = function (id) {
+                    var dom = document.querySelector(id);
+                    var player = dom.animate([
+                        { transform: 'scale(1)', opacity: 1, offset: 0 },
+                        { transform: 'scale(.5)', opacity: .5, offset: .3 },
+                        { transform: 'scale(.667)', opacity: .667, offset: .7875 },
+                        { transform: 'scale(.6)', opacity: .6, offset: 1 }
+                    ], {
+                        duration: 700, //milliseconds
+                        easing: 'ease-in-out', //'linear', a bezier curve, etc.
+                        delay: 10, //milliseconds
+                        iterations: Infinity, //or a number
+                        direction: 'alternate', //'normal', 'reverse', etc.
+                        fill: 'forwards' //'backwards', 'both', 'none', 'auto'
+                    });
+                };
+                var _bounce = function (id) {
+                    var dom = document.querySelector(id);
+                    //https://github.com/daneden/animate.css/blob/master/source/attention_seekers/bounce.css
+                    var player = dom.animate([
+                        {
+                            offset: 0,
+                            animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
+                            transform: 'translate3d(0,0,0)',
+                            transformOrigin: 'center bottom'
+                        },
+                        {
+                            offset: 0.2,
+                            animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
+                            transform: 'translate3d(0,0,0)',
+                            transformOrigin: 'center bottom'
+                        },
+                        {
+                            offset: 0.4,
+                            animationTimingFunction: 'cubic-bezier(0.755, 0.050, 0.855, 0.060)',
+                            transform: 'translate3d(0, -30px, 0)',
+                            transformOrigin: 'center bottom'
+                        },
+                        {
+                            offset: 0.43,
+                            animationTimingFunction: 'cubic-bezier(0.755, 0.050, 0.855, 0.060)',
+                            transform: 'translate3d(0, -30px, 0)',
+                            transformOrigin: 'center bottom'
+                        },
+                        {
+                            offset: 0.53,
+                            animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
+                            transform: 'translate3d(0,0,0)',
+                            transformOrigin: 'center bottom'
+                        },
+                        {
+                            offset: 0.7,
+                            animationTimingFunction: 'cubic-bezier(0.755, 0.050, 0.855, 0.060)',
+                            transform: 'translate3d(0, -15px, 0)',
+                            transformOrigin: 'center bottom'
+                        },
+                        {
+                            offset: 0.8,
+                            animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
+                            transform: 'translate3d(0,0,0)',
+                            transformOrigin: 'center bottom'
+                        },
+                        {
+                            offset: 0.9,
+                            transform: 'translate3d(0,-4px,0)',
+                            transformOrigin: 'center bottom'
+                        },
+                        {
+                            offset: 1,
+                            animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
+                            transform: 'translate3d(0,0,0)',
+                            transformOrigin: 'center bottom'
+                        }
+                    ], {
+                        duration: 1000,
+                        iterations: 1,
+                        direction: 'normal',
+                        fill: 'both'
+                    });
+                };
+
+                return {
+                    example: _example,
+                    bounce: _bounce
+                };
+
+            })();
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var player = window.animate.bounce('#target');
+            });
+        })(window);
+
+
+    </script>
+</head>
+<body>
+    <div id="target">animate library</div>
+</body>
+</html>
