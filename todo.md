@@ -1,7 +1,7 @@
-gibbok animate.js
+## To dos
 
-- double check web animations api
-- list effects
-- define how to pass parameters
-- define how to return player
-- start first set of animations 
+- Double check web animations api.
+- List effects.
+- Define how to pass parameters.
+- Define how to return player.
+- Start first set of animations.
