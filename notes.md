@@ -47,9 +47,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Element/animate#Parameters
 
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Keyframe_Formats
 
-CSS keyframes to Objects keyframes
-CSS keyframes parser
-
-@keyframes rule to Object
-
-keyframesParser
+Possible names:
+- CSS keyframes to Objects keyframes
+- CSS keyframes parser
+- @keyframes rule to Object
+- CSS keyframes to Objects
+- keyframes-tool
+- web-animations-keyframes-tool
+- keyframes-tools
