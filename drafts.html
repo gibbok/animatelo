@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        #target {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        /*
+        DONE
+        - detect selector
+        - default values
+        - return function to function
+        - overwrite animation parameters
+
+        TODO
+        - plugin extensions
+
+        */
+        (function (window) {
+            document.addEventListener('DOMContentLoaded', function () {
+                window.animate = function (selector) {
+                    var target;
+                    if (typeof 'object' && selector.nodeName) {
+                        target = selector;
+                    } else if (typeof 'string') {
+                        target = document.querySelector(selector);
+                    } else {
+                        throw 'not valid selector';
+                    }
+                    // default timing
+                    var timingDefault = {
+                        duration: 700,
+                        easing: 'ease-in-out',
+                        iterations: Infinity,
+                        direction: 'alternate',
+                        fill: 'forwards'
+                    };
+                    return {
+                        pulse: function (timingArg) {
+                            debugger
+                            var options = {
+                                timing: !timingArg ? timingDefault : timingArg
+                            };
+
+                            var keyframes = [{
+                                "transform": "scale3d(1, 1, 1)",
+                                "offset": 0
+                            }, {
+                                "transform": "scale3d(1.05, 1.05, 1.05)",
+                                "offset": 0.5
+                            }, {
+                                "transform": "scale3d(1, 1, 1)",
+                                "offset": 1
+                            }];
+
+                            target.animate(keyframes, options.timing);
+                        }
+                    };
+                };
+                //var target = document.getElementById('target');
+                //window.animate(target).pulse();
+
+                window.animate('#target').pulse();
+
+                //var timingCustom = {
+                //    duration: 100,
+                //    easing: 'ease-in-out',
+                //    iterations: Infinity,
+                //    direction: 'alternate',
+                //    fill: 'forwards'
+                //};
+                //window.animate('#target').pulse(timingCustom);
+            });
+        })(window);
+    </script>
+</head>
+
+<body>
+    <div id="target"></div>
+</body>
+</html>
