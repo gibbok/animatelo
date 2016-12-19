@@ -10,10 +10,24 @@
     "type": "git",
     "url": "git+https://github.com/gibbok/animate.js.git"
   },
+  "dependencies": {
+    "connect": "^3.5.0",
+    "open": "^0.0.5",
+    "jshint-stylish": "^2.2.1",
+    "jscs": "^3.0.7",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-jscs-stylish": "^1.4.0"
+  },
   "author": "GibboK",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gibbok/animate.js/issues"
   },
-  "homepage": "https://github.com/gibbok/animate.js#readme"
+  "homepage": "https://github.com/gibbok/animate.js#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
