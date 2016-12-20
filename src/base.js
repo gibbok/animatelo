@@ -1,15 +1,15 @@
-; (function (animatejs, undefined) {
-    var _defaultTiming = {
+; (function (animatejs) {
+    'use strict';
+    var _defaultOptions = {
         duration: 1000,
-        iterations: 1,
         delay: 0,
-        fill: 'both',
-        direction: 'normal'
+        iterations: 1,
+        direction: 'normal',
+        fill: 'both'
     };
     var _UUID = function () {
         var d = new Date().getTime(),
             uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-                /* jslint bitwise:true */
                 var r = (d + Math.random() * 16) % 16 | 0;
                 d = Math.floor(d / 16);
                 return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
@@ -18,22 +18,34 @@
     };
 
     animatejs._select = function (selector) {
-        var nodeList = [];
-        if (typeof 'object' && selector.nodeName) {
-            nodeList.push(selector);
-        } else if (typeof 'string') {
-            nodeList = document.querySelectorAll(selector);
+        var nodeList;
+        var isNodeList = selector instanceof NodeList;
+        var isNode = selector instanceof Node;
+        var isString = typeof selector === 'string';
+        if (isNodeList) {
+            nodeList = selector;
+        } else if (isNode) {
+            nodeList[selector];
+        } else if (isString) {
+            nodeList = document.querySelectorAll(selector)
         } else {
-            throw 'not a valid selector';
+            throw 'selector is invaid';
         }
         return nodeList;
     };
 
-    animatejs._animate = function (selector, keyframes) {
+    animatejs._animate = function (selector, keyframes, optionsArg) {
+        var options = {
+            duration: optionsArg && 'duration' in optionsArg ? optionsArg.duration : _defaultOptions.duration,
+            delay: optionsArg && 'delay' in optionsArg ? optionsArg.delay : _defaultOptions.delay,
+            iterations: optionsArg && 'iterations' in optionsArg ? optionsArg.iterations : _defaultOptions.iterations,
+            direction: optionsArg && 'direction' in optionsArg ? optionsArg.direction : _defaultOptions.direction,
+            fill: optionsArg && 'fill' in optionsArg ? optionsArg.fill : _defaultOptions.fill,
+        };
         var nodeList = animatejs._select(selector),
             players = [];
         nodeList.forEach(function (node) {
-            var player = node.animate(keyframes, _defaultTiming);
+            var player = node.animate(keyframes, options);
             player.id = _UUID();
             players.push(player);
         });
