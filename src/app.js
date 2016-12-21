@@ -13,7 +13,11 @@
     //var players = window.animatejs.swing(logos);
     //var players = window.animatejs.tada(logos);
     //var players = window.animatejs.wobble(logos);
-    var players = window.animatejs.jello(logos);
+    //var players = window.animatejs.jello(logos);
+    //var players = window.animatejs.headShake(logos);
+    
+    
+    //var players = window.animatejs.shake('#logos');
 
     // var players = window.animatejs.bounce(logos, {
     //     duration: 1000,
