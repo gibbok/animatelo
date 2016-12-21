@@ -26,7 +26,7 @@ node keyframes-tool ../animate.css/source/attention_seekers/swing.css ../animate
 node keyframes-tool ../animate.css/source/attention_seekers/tada.css ../animate.js/src/attentionSeekers/tada.json
 node keyframes-tool ../animate.css/source/attention_seekers/wobble.css ../animate.js/src/attentionSeekers/wobble.json
 node keyframes-tool ../animate.css/source/attention_seekers/jello.css ../animate.js/src/attentionSeekers/jello.json
+node keyframes-tool ../animate.css/source/attention_seekers/headShake.css ../animate.js/src/attentionSeekers/headShake.json
 
 -------------------------------------------
 NOT DONE
-node keyframes-tool ../animate.css/source/attention_seekers/headShake.css ../animate.js/src/attentionSeekers/headShake.json
