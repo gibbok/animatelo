@@ -7,7 +7,8 @@
     //var players = window.animatejs.bounce(logos);
     //var players = window.animatejs.flash(logos);
     //var players = window.animatejs.pulse(logos);
-    var players = window.animatejs.rubberBand(logos);
+    //var players = window.animatejs.rubberBand(logos);
+    var players = window.animatejs.shake(logos);
 
     //var players = window.animatejs.bounce(logos, {id:'rocco'});
 
