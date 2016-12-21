@@ -1,19 +1,24 @@
 TODO
 
 
+
 node keyframes-tool ../animate.css/source/attention_seekers/jello.css ../animate.js/src/attentionSeekers/jello.json
-node keyframes-tool ../animate.css/source/attention_seekers/pulse.css ../animate.js/src/attentionSeekers/pulse.json
-node keyframes-tool ../animate.css/source/attention_seekers/rubberBand.css ../animate.js/src/attentionSeekers/rubberBand.json
+
+
 node keyframes-tool ../animate.css/source/attention_seekers/shake.css  ../animate.js/src/attentionSeekers/shake.json
 node keyframes-tool ../animate.css/source/attention_seekers/swing.css ../animate.js/src/attentionSeekers/swing.json
 node keyframes-tool ../animate.css/source/attention_seekers/tada.css ../animate.js/src/attentionSeekers/tada.json
 node keyframes-tool ../animate.css/source/attention_seekers/wobble.css ../animate.js/src/attentionSeekers/wobble.json
 
 PROGRESS
-node keyframes-tool ../animate.css/source/attention_seekers/headShake.css ../animate.js/src/attentionSeekers/headShake.json
-
+node keyframes-tool ../animate.css/source/attention_seekers/rubberBand.css ../animate.js/src/attentionSeekers/rubberBand.json
 
 
 DONE
 node keyframes-tool ../animate.css/source/attention_seekers/bounce.css ../animate.js/src/attentionSeekers/bounce.json
 node keyframes-tool ../animate.css/source/attention_seekers/flash.css ../animate.js/src/attentionSeekers/flash.json
+
+node keyframes-tool ../animate.css/source/attention_seekers/pulse.css ../animate.js/src/attentionSeekers/pulse.json
+
+NOT DONE
+node keyframes-tool ../animate.css/source/attention_seekers/headShake.css ../animate.js/src/attentionSeekers/headShake.json
