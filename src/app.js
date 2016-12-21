@@ -1,17 +1,21 @@
 ﻿document.addEventListener('DOMContentLoaded', function () {
     //var logos = document.querySelectorAll('.logo');
     //var logos = document.querySelectorAll('#logo1');
-    //var logos = '#logo1';
-    var logos = '.logo';
+    var logos = '#logo1';
+    //var logos = '.logo';
 
-    window.animatejs.bounce(logos);
+    //var players = window.animatejs.bounce(logos);
+    //var players = window.animatejs.flash(logos);
+    var players = window.animatejs.headShake(logos);
 
-    // window.animatejs.bounce(logo, {
+    //var players = window.animatejs.bounce(logos, {id:'rocco'});
+
+    // var players = window.animatejs.bounce(logos, {
     //     duration: 1000,
     //     delay: 2000,
     //     iterations: Infinity,
     //     direction: 'normal',
-    //     fill: 'backwards'
+    //     fill: 'both'
     // });
 });
 

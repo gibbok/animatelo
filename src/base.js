@@ -5,7 +5,8 @@
         delay: 0,
         iterations: 1,
         direction: 'normal',
-        fill: 'both'
+        fill: 'both',
+        playbackRate: 1
     };
     var _UUID = function () {
         var d = new Date().getTime(),
@@ -41,12 +42,19 @@
             iterations: optionsArg && 'iterations' in optionsArg ? optionsArg.iterations : _defaultOptions.iterations,
             direction: optionsArg && 'direction' in optionsArg ? optionsArg.direction : _defaultOptions.direction,
             fill: optionsArg && 'fill' in optionsArg ? optionsArg.fill : _defaultOptions.fill,
+            playbackRate: optionsArg && 'fill' in optionsArg ? optionsArg.playbackRate : _defaultOptions.playbackRate,
+            id: optionsArg && 'id' in optionsArg ? optionsArg.id : _UUID()
         };
+        var hasUserId = optionsArg && 'id' in optionsArg ? true : false;
         var nodeList = animatejs._select(selector),
             players = [];
-        nodeList.forEach(function (node) {
+        nodeList.forEach(function (node, index) {
             var player = node.animate(keyframes, options);
-            player.id = _UUID();
+            if (hasUserId) {
+                player.id = options.id + '-' + index;
+            }else{
+                player.id = _UUID();
+            }
             players.push(player);
         });
         return players;
