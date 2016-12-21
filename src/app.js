@@ -11,9 +11,9 @@
     //var players = window.animatejs.rubberBand(logos);
     //var players = window.animatejs.shake(logos);
     //var players = window.animatejs.swing(logos);
-    var players = window.animatejs.tada(logos);
+    //var players = window.animatejs.tada(logos);
+    //var players = window.animatejs.wobble(logos);
 
-    //var players = window.animatejs.bounce(logos, {id:'rocco'});
 
     // var players = window.animatejs.bounce(logos, {
     //     duration: 1000,
