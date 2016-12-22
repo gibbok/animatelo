@@ -1,9 +1,9 @@
 ﻿document.addEventListener('DOMContentLoaded', function () {
     //var logos = document.querySelectorAll('.logo');
     //var logos = document.querySelectorAll('#logo1');
-    //var logos = '#logo1';
+    var logos = '#logo3';
     //var logos = '.logo';
-    var logos = '#target';
+    //var logos = '#target';
 
     //var players = window.animatejs.bounce(logos);
     //var players = window.animatejs.flash(logos);
@@ -16,6 +16,8 @@
     //var players = window.animatejs.jello(logos);
     //var players = window.animatejs.headShake(logos);
     var players = window.animatejs.bounceIn(logos); 
+
+
     
     //var players = window.animatejs.shake('#logos');
 

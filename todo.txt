@@ -1,7 +1,7 @@
 -------------------------------------------
 TODO
 
-node keyframes-tool ../animate.css/source/bouncing_entrances/bounceInDown.css ../animate.js/src/bouncingEntrances/bounceInDown.json
+
 node keyframes-tool ../animate.css/source/bouncing_entrances/bounceInLeft.css ../animate.js/src/bouncingEntrances/bounceInLeft.json
 node keyframes-tool ../animate.css/source/bouncing_entrances/bounceInRight.css ../animate.js/src/bouncingEntrances/bounceInRight.json
 node keyframes-tool ../animate.css/source/bouncing_entrances/bounceInUp.css ../animate.js/src/bouncingEntrances/bounceInUp.json
@@ -10,6 +10,9 @@ node keyframes-tool ../animate.css/source/bouncing_entrances/bounceInUp.css ../a
 
 -------------------------------------------
 PROGRESS
+
+node keyframes-tool ../animate.css/source/bouncing_entrances/bounceInDown.css ../animate.js/src/bouncingEntrances/bounceInDown.json
+
 
 -------------------------------------------
 DONE
