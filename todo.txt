@@ -1,12 +1,10 @@
 -------------------------------------------
 TODO
 
-
-
-
-
-
-
+node keyframes-tool ../animate.css/source/bouncing_entrances/bounceInDown.css ../animate.js/src/bouncingEntrances/bounceInDown.json
+node keyframes-tool ../animate.css/source/bouncing_entrances/bounceInLeft.css ../animate.js/src/bouncingEntrances/bounceInLeft.json
+node keyframes-tool ../animate.css/source/bouncing_entrances/bounceInRight.css ../animate.js/src/bouncingEntrances/bounceInRight.json
+node keyframes-tool ../animate.css/source/bouncing_entrances/bounceInUp.css ../animate.js/src/bouncingEntrances/bounceInUp.json
 
 
 
@@ -27,6 +25,12 @@ node keyframes-tool ../animate.css/source/attention_seekers/tada.css ../animate.
 node keyframes-tool ../animate.css/source/attention_seekers/wobble.css ../animate.js/src/attentionSeekers/wobble.json
 node keyframes-tool ../animate.css/source/attention_seekers/jello.css ../animate.js/src/attentionSeekers/jello.json
 node keyframes-tool ../animate.css/source/attention_seekers/headShake.css ../animate.js/src/attentionSeekers/headShake.json
+
+bouncing_entrances
+node keyframes-tool ../animate.css/source/bouncing_entrances/bounceIn.css ../animate.js/src/bouncingEntrances/bounceIn.json
+
+
+
 
 -------------------------------------------
 NOT DONE
