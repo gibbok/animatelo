@@ -16,12 +16,22 @@
     <script src="attentionSeekers/jello.js"></script>
     <script src="attentionSeekers/headShake.js"></script>
     <script src="bouncingEntrances/bounceIn.js"></script>
+    <script src="bouncingEntrances/bounceInDown.js"></script>
     <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <style>
-        #target {
-            width: 450px;
+        #target1 {
+            display: inline-block;
+            width: 150px;
             height: 50px;
             background-color: red;
+        }
+        
+        #target2 {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            background-color: blue;
         }
     </style>
 </head>
@@ -30,7 +40,8 @@
     <img id="logo1" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg">
     <img id="logo2" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg">
     <img id="logo3" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg">
-    <div id="target"></div>
+    <div id="target1">js</div>
+    <div id="target2" class="animated bounceInDown">css</div>
 </body>
 
 </html>
