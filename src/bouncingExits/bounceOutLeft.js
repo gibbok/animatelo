@@ -11,7 +11,7 @@
             "offset": 0.2
         }, {
             "opacity": 0,
-            "transform": "translate3d(-1700px, 0, 0)",
+            "transform": "translate3d(-2000px, 0, 0)",
             "offset": 1
         }];
         return animatejs._animate(selector, keyframeset, options);

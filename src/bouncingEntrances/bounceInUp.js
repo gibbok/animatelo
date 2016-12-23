@@ -4,7 +4,7 @@
         var keyframeset = [
             {
                 "opacity": 0,
-                "transform": "translate3d(0, 1700px, 0)",
+                "transform": "translate3d(0, 2000px, 0)",
                 "animationTimingFunction": "cubic-bezier(0.215, 0.610, 0.355, 1.000)",
                 "offset": 0
             },
