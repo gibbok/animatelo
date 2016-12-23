@@ -3,14 +3,14 @@ TODO
 
 
 
-node keyframes-tool ../animate.css/source/bouncing_exits/bounceOutLeft.css ../animate.js/src/bouncingExits/bounceOutLeft.json
 node keyframes-tool ../animate.css/source/bouncing_exits/bounceOutRight.css ../animate.js/src/bouncingExits/bounceOutRight.json
 node keyframes-tool ../animate.css/source/bouncing_exits/bounceOutUp.css ../animate.js/src/bouncingExits/bounceOutUp.json
 
 -------------------------------------------
 PROGRESS
 
-node keyframes-tool ../animate.css/source/bouncing_exits/bounceOutDown.css ../animate.js/src/bouncingExits/bounceOutDown.json
+node keyframes-tool ../animate.css/source/bouncing_exits/bounceOutLeft.css ../animate.js/src/bouncingExits/bounceOutLeft.json
+
 -------------------------------------------
 DONE
 
@@ -35,6 +35,7 @@ node keyframes-tool ../animate.css/source/bouncing_entrances/bounceInUp.css ../a
 
 bouncing_exits
 node keyframes-tool ../animate.css/source/bouncing_exits/bounceOut.css ../animate.js/src/bouncingExits/bounceOut.json
+node keyframes-tool ../animate.css/source/bouncing_exits/bounceOutDown.css ../animate.js/src/bouncingExits/bounceOutDown.json
 
 
 -------------------------------------------
