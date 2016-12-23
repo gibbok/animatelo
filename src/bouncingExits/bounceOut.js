@@ -4,7 +4,7 @@
         var keyframeset = [
             {
                 "opacity": 1,
-                "transform": "scale3d(1, 1, 1)",
+                "transform": "none",
                 "offset": 0
             }, {
                 "transform": "scale3d(.9, .9, .9)",

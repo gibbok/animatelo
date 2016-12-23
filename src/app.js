@@ -20,7 +20,8 @@
     //var players = window.animatejs.bounceInLeft(logos);
     //var players = window.animatejs.bounceInRight(logos);
     //var players = window.animatejs.bounceInUp(logos);
-    var players = window.animatejs.bounceOut(logos);
+    //var players = window.animatejs.bounceOut(logos);
+    var players = window.animatejs.bounceOutDown(logos);
 
     //var players = window.animatejs.shake('#logos');
 
