@@ -7,22 +7,22 @@
         direction: 'normal',
         fill: 'both',
         playbackRate: 1
-    };
-    var _UUID = function () {
-        var d = new Date().getTime(),
-            uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-                var r = (d + Math.random() * 16) % 16 | 0;
-                d = Math.floor(d / 16);
-                return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-            });
-        return uuid;
-    };
+    },
+        _UUID = function () {
+            var d = new Date().getTime(),
+                uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                    var r = (d + Math.random() * 16) % 16 | 0;
+                    d = Math.floor(d / 16);
+                    return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+                });
+            return uuid;
+        };
 
     animatejs._select = function (selector) {
-        var nodeList;
-        var isNodeList = selector instanceof NodeList;
-        var isNode = selector instanceof Node;
-        var isString = typeof selector === 'string';
+        var nodeList,
+            isNodeList = selector instanceof NodeList,
+            isNode = selector instanceof Node,
+            isString = typeof selector === 'string';
         if (isNodeList) {
             nodeList = selector;
         } else if (isNode) {
@@ -44,15 +44,16 @@
             fill: optionsArg && 'fill' in optionsArg ? optionsArg.fill : _defaultOptions.fill,
             playbackRate: optionsArg && 'fill' in optionsArg ? optionsArg.playbackRate : _defaultOptions.playbackRate,
             id: optionsArg && 'id' in optionsArg ? optionsArg.id : _UUID()
-        };
-        var hasUserId = optionsArg && 'id' in optionsArg ? true : false;
-        var nodeList = animatejs._select(selector),
+        },
+            hasUserId = optionsArg && 'id' in optionsArg ? true : false,
+            nodeList = animatejs._select(selector),
             players = [];
+            
         nodeList.forEach(function (node, index) {
             var player = node.animate(keyframes, options);
             if (hasUserId) {
                 player.id = options.id + '-' + index;
-            }else{
+            } else {
                 player.id = _UUID();
             }
             players.push(player);
