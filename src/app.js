@@ -26,7 +26,10 @@
     //var players = window.animatejs.bounceOutRight(logos);
     //var players = window.animatejs.bounceOutUp(logos);
     //var players = window.animatejs.fadeIn(logos);
-    var players = window.animatejs.fadeInDown(logos);
+    //var players = window.animatejs.fadeInDown(logos);
+    var players = window.animatejs.fadeInDownBig(logos);
+
+
 
     //var players = window.animatejs.shake('#logos');
 
