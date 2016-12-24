@@ -29,7 +29,10 @@
     //var players = window.animatejs.fadeInDown(logos);
     //var players = window.animatejs.fadeInDownBig(logos);
     //var players = window.animatejs.fadeInLeft(logos);
-    var players = window.animatejs.fadeInLeftBig(logos);
+    //var players = window.animatejs.fadeInLeftBig(logos);
+    var players = window.animatejs.fadeInRight(logos);
+
+
 
     //var players = window.animatejs.shake('#logos');
 
