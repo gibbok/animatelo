@@ -2,7 +2,6 @@
 TODO
 
 
-node keyframes-tool ../animate.css/source/fading_entrances/fadeInDown.css ../animate.js/src/fadingEntrances/fadeInDown.json
 node keyframes-tool ../animate.css/source/fading_entrances/fadeInDownBig.css ../animate.js/src/fadingEntrances/fadeInDownBig.json
 node keyframes-tool ../animate.css/source/fading_entrances/fadeInLeft.css ../animate.js/src/fadingEntrances/fadeInLeft.json
 node keyframes-tool ../animate.css/source/fading_entrances/fadeInLeftBig.css ../animate.js/src/fadingEntrances/fadeInLeftBig.json
@@ -14,8 +13,6 @@ node keyframes-tool ../animate.css/source/fading_entrances/fadeInUpBig.css ../an
 
 -------------------------------------------
 PROGRESS
-
-node keyframes-tool ../animate.css/source/fading_entrances/fadeIn.css ../animate.js/src/fadingEntrances/fadeIn.json
 
 
 -------------------------------------------
@@ -48,6 +45,9 @@ node keyframes-tool ../animate.css/source/bouncing_exits/bounceOutRight.css ../a
 node keyframes-tool ../animate.css/source/bouncing_exits/bounceOutUp.css ../animate.js/src/bouncingExits/bounceOutUp.json
 
 fading_entrances
+node keyframes-tool ../animate.css/source/fading_entrances/fadeIn.css ../animate.js/src/fadingEntrances/fadeIn.json
+node keyframes-tool ../animate.css/source/fading_entrances/fadeInDown.css ../animate.js/src/fadingEntrances/fadeInDown.json
+
 
 
 
