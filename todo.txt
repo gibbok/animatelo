@@ -1,7 +1,7 @@
 -------------------------------------------
 TODO
 
-node keyframes-tool ../animate.css/source/fading_exits/fadeOut.css ../animate.js/src/fadingExits/fadeOut.json
+
 node keyframes-tool ../animate.css/source/fading_exits/fadeOutDown.css ../animate.js/src/fadingExits/fadeOutDown.json
 node keyframes-tool ../animate.css/source/fading_exits/fadeOutDownBig.css ../animate.js/src/fadingExits/fadeOutDownBig.json
 node keyframes-tool ../animate.css/source/fading_exits/fadeOutLeft.css ../animate.js/src/fadingExits/fadeOutLeft.json
@@ -14,6 +14,10 @@ node keyframes-tool ../animate.css/source/fading_exits/fadeOutUpBig.css ../anima
 
 -------------------------------------------
 PROGRESS
+
+node keyframes-tool ../animate.css/source/fading_exits/fadeOut.css ../animate.js/src/fadingExits/fadeOut.json
+
+
 
 
 -------------------------------------------
