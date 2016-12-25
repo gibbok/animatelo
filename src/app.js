@@ -33,14 +33,15 @@
     //var players = window.animatejs.fadeInRight(logos);
     //var players = window.animatejs.fadeInRightBig(logos);
     //var players = window.animatejs.fadeInUp(logos);
-    // var players = window.animatejs.fadeInUpBig(logos);
+    //var players = window.animatejs.fadeInUpBig(logos);
     //var players = window.animatejs.fadeOut(logos);
     //var players = window.animatejs.fadeOutDown(logos);
     //var players = window.animatejs.fadeOutDownBig(logos);
-    // var players = window.animatejs.fadeOutLeft(logos);
-    // var players = window.animatejs.fadeOutLeftBig(logos);
+    //var players = window.animatejs.fadeOutLeft(logos);
+    //var players = window.animatejs.fadeOutLeftBig(logos);
     //var players = window.animatejs.fadeOutRight(logos);
-    var players = window.animatejs.fadeOutRightBig(logos);
+    //var players = window.animatejs.fadeOutRightBig(logos);
+    var players = window.animatejs.fadeOutUp(logos);
 
 
     //var players = window.animatejs.shake('#logos');
