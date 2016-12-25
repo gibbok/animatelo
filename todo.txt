@@ -1,12 +1,11 @@
 -------------------------------------------
 TODO
 
-node keyframes-tool ../animate.css/source/lightspeed/lightSpeedIn.css ../animate.js/src/lightspeed/lightSpeedIn.json
-node keyframes-tool ../animate.css/source/lightspeed/lightSpeedOut.css ../animate.js/src/lightspeed/lightSpeedOut.json
 
 
 -------------------------------------------
 PROGRESS
+node keyframes-tool ../animate.css/source/lightspeed/lightSpeedOut.css ../animate.js/src/lightspeed/lightSpeedOut.json
 
 
 -------------------------------------------
@@ -68,6 +67,7 @@ node keyframes-tool ../animate.css/source/flippers/flipOutX.css ../animate.js/sr
 node keyframes-tool ../animate.css/source/flippers/flipOutY.css ../animate.js/src/flippers/flipOutY.json
 
 lightspeed
+node keyframes-tool ../animate.css/source/lightspeed/lightSpeedIn.css ../animate.js/src/lightspeed/lightSpeedIn.json
 
 
 
