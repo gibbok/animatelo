@@ -47,7 +47,9 @@
     //var players = window.animatejs.flipInX(logos);
     //var players = window.animatejs.flipInY(logos);
     //var players = window.animatejs.flipOutX(logos);
-    var players = window.animatejs.flipOutY(logos);
+    // var players = window.animatejs.flipOutY(logos);
+    var players = window.animatejs.lightSpeedIn(logos);
+
 
 
     //var players = window.animatejs.shake('#logos');
