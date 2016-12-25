@@ -44,7 +44,10 @@
     //var players = window.animatejs.fadeOutUp(logos);
     // var players = window.animatejs.fadeOutUpBig(logos);
     // var players = window.animatejs.flip(logos);
-    var players = window.animatejs.flipInX(logos);
+    // var players = window.animatejs.flipInX(logos);
+    var players = window.animatejs.flipInY(logos);
+
+
 
     //var players = window.animatejs.shake('#logos');
 
