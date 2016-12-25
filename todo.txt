@@ -2,14 +2,16 @@
 TODO
 
 
-node keyframes-tool ../animate.css/source/fading_exits/fadeOutUpBig.css ../animate.js/src/fadingExits/fadeOutUpBig.json
 
 
 -------------------------------------------
 PROGRESS
 
-
-
+node keyframes-tool ../animate.css/source/flippers/flip.css ../animate.js/src/flippers/flip.json
+node keyframes-tool ../animate.css/source/flippers/flipInX.css ../animate.js/src/flippers/flipInX.json
+node keyframes-tool ../animate.css/source/flippers/flipInY.css ../animate.js/src/flippers/flipInY.json
+node keyframes-tool ../animate.css/source/flippers/flipOutX.css ../animate.js/src/flippers/flipOutX.json
+node keyframes-tool ../animate.css/source/flippers/flipOutY.css ../animate.js/src/flippers/flipOutY.json
 
 -------------------------------------------
 DONE
@@ -60,6 +62,7 @@ node keyframes-tool ../animate.css/source/fading_exits/fadeOutLeftBig.css ../ani
 node keyframes-tool ../animate.css/source/fading_exits/fadeOutRight.css ../animate.js/src/fadingExits/fadeOutRight.json
 node keyframes-tool ../animate.css/source/fading_exits/fadeOutRightBig.css ../animate.js/src/fadingExits/fadeOutRightBig.json
 node keyframes-tool ../animate.css/source/fading_exits/fadeOutUp.css ../animate.js/src/fadingExits/fadeOutUp.json
+node keyframes-tool ../animate.css/source/fading_exits/fadeOutUpBig.css ../animate.js/src/fadingExits/fadeOutUpBig.json
 
 
 
