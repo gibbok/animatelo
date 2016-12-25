@@ -37,7 +37,8 @@
     //var players = window.animatejs.fadeOut(logos);
     //var players = window.animatejs.fadeOutDown(logos);
     //var players = window.animatejs.fadeOutDownBig(logos);
-    var players = window.animatejs.fadeOutLeft(logos);
+    // var players = window.animatejs.fadeOutLeft(logos);
+    var players = window.animatejs.fadeOutLeftBig(logos);
 
 
     //var players = window.animatejs.shake('#logos');
