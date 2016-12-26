@@ -66,7 +66,9 @@
     //var players = window.animatejs.slideInUp(logos);
     //var players = window.animatejs.slideOutDown(logos);
     //var players = window.animatejs.slideOutLeft(logos);
-    var players = window.animatejs.slideOutRight(logos);
+    //var players = window.animatejs.slideOutRight(logos);
+    var players = window.animatejs.slideOutUp(logos);
+
 
 
 
