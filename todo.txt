@@ -1,14 +1,12 @@
 -------------------------------------------
 TODO
 
-node keyframes-tool ../animate.css/source/sliding_entrances/slideInRight.css ../animate.js/src/slidingEntrances/slideInRight.json
-node keyframes-tool ../animate.css/source/sliding_entrances/slideInUp.css ../animate.js/src/slidingEntrances/slideInUp.json
 
 
 -------------------------------------------
 PROGRESS
 
-
+node keyframes-tool ../animate.css/source/sliding_entrances/slideInUp.css ../animate.js/src/slidingEntrances/slideInUp.json
 
 -------------------------------------------
 DONE
