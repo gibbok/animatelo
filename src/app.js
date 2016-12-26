@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+﻿document.addEventListener('DOMContentLoaded', function () {
     //var logos = document.querySelectorAll('.logo');
     //var logos = document.querySelectorAll('#logo1');
     //var logos = '#logo3';
@@ -50,7 +50,9 @@
     //var players = window.animatejs.flipOutY(logos);
     //var players = window.animatejs.lightSpeedIn(logos);
     //var players = window.animatejs.lightSpeedOut(logos);
-    var players = window.animatejs.rotateIn(logos);
+    //var players = window.animatejs.rotateIn(logos);
+    var players = window.animatejs.rotateInDownLeft(logos);
+
 
 
     //var players = window.animatejs.shake('#logos');
