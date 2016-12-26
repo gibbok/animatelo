@@ -1,7 +1,6 @@
 -------------------------------------------
 TODO
-node keyframes-tool ../animate.css/source/sliding_entrances/slideInDown.css ../animate.js/src/slidingEntrances/slideInDown.json
-node keyframes-tool ../animate.css/source/sliding_entrances/slideInLeft.css ../animate.js/src/slidingEntrances/slideInLeft.json
+
 node keyframes-tool ../animate.css/source/sliding_entrances/slideInRight.css ../animate.js/src/slidingEntrances/slideInRight.json
 node keyframes-tool ../animate.css/source/sliding_entrances/slideInUp.css ../animate.js/src/slidingEntrances/slideInUp.json
 
@@ -9,7 +8,7 @@ node keyframes-tool ../animate.css/source/sliding_entrances/slideInUp.css ../ani
 -------------------------------------------
 PROGRESS
 
-
+node keyframes-tool ../animate.css/source/sliding_entrances/slideInLeft.css ../animate.js/src/slidingEntrances/slideInLeft.json
 
 
 -------------------------------------------
@@ -88,7 +87,8 @@ node keyframes-tool ../animate.css/source/rotating_exits/rotateOutDownRight.css 
 node keyframes-tool ../animate.css/source/rotating_exits/rotateOutUpLeft.css ../animate.js/src/rotatingExits/rotateOutUpLeft.json
 node keyframes-tool ../animate.css/source/rotating_exits/rotateOutUpRight.css ../animate.js/src/rotatingExits/rotateOutUpRight.json
 
-
+slidingEntrances
+node keyframes-tool ../animate.css/source/sliding_entrances/slideInDown.css ../animate.js/src/slidingEntrances/slideInDown.json
 
 -------------------------------------------
 NOT DONE

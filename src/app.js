@@ -60,8 +60,8 @@
     //var players = window.animatejs.rotateOutDownRight(logos);
     //var players = window.animatejs.rotateOutUpLeft(logos);
     //var players = window.animatejs.rotateOutUpRight(logos);
-    var players = window.animatejs.slideInDown(logos);
-
+    //var players = window.animatejs.slideInDown(logos);
+    var players = window.animatejs.slideInLeft(logos);
 
     //var players = window.animatejs.shake('#logos');
 
