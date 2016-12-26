@@ -2,14 +2,12 @@
 TODO
 
 
-node keyframes-tool ../animate.css/source/rotating_exits/rotateOutUpLeft.css ../animate.js/src/rotatingExits/rotateOutUpLeft.json
 node keyframes-tool ../animate.css/source/rotating_exits/rotateOutUpRight.css ../animate.js/src/rotatingExits/rotateOutUpRight.json
 
 
 -------------------------------------------
 PROGRESS
-
-node keyframes-tool ../animate.css/source/rotating_exits/rotateOutDownRight.css ../animate.js/src/rotatingExits/rotateOutDownRight.json
+node keyframes-tool ../animate.css/source/rotating_exits/rotateOutUpLeft.css ../animate.js/src/rotatingExits/rotateOutUpLeft.json
 
 
 -------------------------------------------
@@ -84,6 +82,8 @@ node keyframes-tool ../animate.css/source/rotating_entrances/rotateInUpRight.css
 rotating_exits
 node keyframes-tool ../animate.css/source/rotating_exits/rotateOut.css ../animate.js/src/rotatingExits/rotateOut.json
 node keyframes-tool ../animate.css/source/rotating_exits/rotateOutDownLeft.css ../animate.js/src/rotatingExits/rotateOutDownLeft.json
+node keyframes-tool ../animate.css/source/rotating_exits/rotateOutDownRight.css ../animate.js/src/rotatingExits/rotateOutDownRight.json
+
 
 
 
