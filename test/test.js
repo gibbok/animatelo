@@ -1,5 +1,23 @@
 ﻿; (function(window){
    'use strict';
+    function _xhrSuccess () { 
+        this.callback.apply(this, this.arguments); 
+    }
+
+    function _xhrError () { 
+        console.error(this.statusText); 
+    }
+
+    function _request (url, cb) {
+        var oReq = new XMLHttp_request();
+        oReq.callback = cb;
+        oReq.arguments = Array.prototype.slice.call(arguments, 2);
+        oReq.onload = _xhrSuccess;
+        oReq.onerror = _xhrError;
+        oReq.open("get", url, true);
+        oReq.send(null);
+    }
+
     var test = {
         data: null,
         elmMenuAnimations: null,
@@ -10,7 +28,7 @@
                 this.getData();
             }.bind(this));
         },
-        logic:function(data){
+        logic:function(){
             this.getMenuAnimations();
             this.getButtonAnimate();
             this.getMenuAnimationsSelectedValue();
@@ -18,15 +36,7 @@
             this.buttonAnimateListener();
         },
         getData: function(){
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    debugger
-                    alert('Success: ' + xhttp.responseText);
-                }
-            };
-            xhttp.open('GET', '../animatejsConfig.json', true);
-            xhttp.send();
+            _request( '../animatejsConfig.json', this.logic.bind(this));
         },
         getMenuAnimations: function() {
             this.elmMenuAnimations = document.querySelector('#menu-animations');
