@@ -2,10 +2,14 @@
 TODO
 
 
+node keyframes-tool ../animate.css/source/specials/rollIn.css ../animate.js/src/specials/rollIn.json
+node keyframes-tool ../animate.css/source/specials/rollOut.css ../animate.js/src/specials/rollOut.json
+
 
 -------------------------------------------
 PROGRESS
 
+node keyframes-tool ../animate.css/source/specials/hinge.css ../animate.js/src/specials/hinge.json
 
 
 
