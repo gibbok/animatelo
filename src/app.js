@@ -55,7 +55,8 @@
     //var players = window.animatejs.rotateInDownRight(logos);
     //var players = window.animatejs.rotateInUpLeft(logos);
     //var players = window.animatejs.rotateInUpRight(logos);
-    var players = window.animatejs.rotateOut(logos);
+    //var players = window.animatejs.rotateOut(logos);
+    var players = window.animatejs.rotateOutDownLeft(logos);
 
 
     //var players = window.animatejs.shake('#logos');
