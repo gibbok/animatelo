@@ -5,7 +5,7 @@
             {
                 transformOrigin: 'center',
                 transform:'none',
-                opacity: '1',
+                opacity: 1,
                 offset: 0
             },
             {
