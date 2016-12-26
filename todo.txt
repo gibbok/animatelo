@@ -1,13 +1,17 @@
 -------------------------------------------
 TODO
 
+node keyframes-tool ../animate.css/source/zooming_entrances/zoomInDown.css ../animate.js/src/zoomingEntrances/zoomInDown.json
+node keyframes-tool ../animate.css/source/zooming_entrances/zoomInLeft.css ../animate.js/src/zoomingEntrances/zoomInLeft.json
+node keyframes-tool ../animate.css/source/zooming_entrances/zoomInRight.css ../animate.js/src/zoomingEntrances/zoomInRight.json
+node keyframes-tool ../animate.css/source/zooming_entrances/zoomInUp.css ../animate.js/src/zoomingEntrances/zoomInUp.json
 
 
 
 -------------------------------------------
 PROGRESS
 
-node keyframes-tool ../animate.css/source/specials/rollOut.css ../animate.js/src/specials/rollOut.json
+node keyframes-tool ../animate.css/source/zooming_entrances/zoomIn.css ../animate.js/src/zoomingEntrances/zoomIn.json
 
 
 -------------------------------------------
@@ -100,8 +104,9 @@ node keyframes-tool ../animate.css/source/sliding_exits/slideOutUp.css ../animat
 specials
 node keyframes-tool ../animate.css/source/specials/hinge.css ../animate.js/src/specials/hinge.json
 node keyframes-tool ../animate.css/source/specials/rollIn.css ../animate.js/src/specials/rollIn.json
+node keyframes-tool ../animate.css/source/specials/rollOut.css ../animate.js/src/specials/rollOut.json
 
-
+zooming_entrances
 
 -------------------------------------------
 NOT DONE
