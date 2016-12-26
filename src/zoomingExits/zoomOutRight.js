@@ -14,7 +14,7 @@
                 'offset': 0.4
             },
             {
-                'opacity': '0',
+                'opacity': 0,
                 'transform': 'scale(.1) translate3d(2000px, 0, 0)',
                 'transformOrigin': 'right center',
                 'offset': 1

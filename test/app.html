@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../src/base.js"></script>
+    <script src="../src/attentionSeekers/bounce.js"></script>
+    <script src="../src/attentionSeekers/flash.js"></script>
+    <script src="../src/attentionSeekers/pulse.js"></script>
+    <script src="../src/attentionSeekers/rubberBand.js"></script>
+    <script src="../src/attentionSeekers/shake.js"></script>
+    <script src="../src/attentionSeekers/swing.js"></script>
+    <script src="../src/attentionSeekers/tada.js"></script>
+    <script src="../src/attentionSeekers/wobble.js"></script>
+    <script src="../src/attentionSeekers/jello.js"></script>
+    <script src="../src/attentionSeekers/headShake.js"></script>
+    <script src="../src/bouncingEntrances/bounceIn.js"></script>
+    <script src="../src/bouncingEntrances/bounceInDown.js"></script>
+    <script src="../src/bouncingEntrances/bounceInLeft.js"></script>
+    <script src="../src/bouncingEntrances/bounceInRight.js"></script>
+    <script src="../src/bouncingEntrances/bounceInUp.js"></script>
+    <script src="../src/bouncingExits/bounceOut.js"></script>
+    <script src="../src/bouncingExits/bounceOutDown.js"></script>
+    <script src="../src/bouncingExits/bounceOutLeft.js"></script>
+    <script src="../src/bouncingExits/bounceOutRight.js"></script>
+    <script src="../src/bouncingExits/bounceOutUp.js"></script>
+    <script src="../src/fadingEntrances/fadeIn.js"></script>
+    <script src="../src/fadingEntrances/fadeInDown.js"></script>
+    <script src="../src/fadingEntrances/fadeInDownBig.js"></script>
+    <script src="../src/fadingEntrances/fadeInLeft.js"></script>
+    <script src="../src/fadingEntrances/fadeInLeftBig.js"></script>
+    <script src="../src/fadingEntrances/fadeInRight.js"></script>
+    <script src="../src/fadingEntrances/fadeInRightBig.js"></script>
+    <script src="../src/fadingEntrances/fadeInUp.js"></script>
+    <script src="../src/fadingEntrances/fadeInUpBig.js"></script>
+    <script src="../src/fadingExits/fadeOut.js"></script>
+    <script src="../src/fadingExits/fadeOutDown.js"></script>
+    <script src="../src/fadingExits/fadeOutDownBig.js"></script>
+    <script src="../src/fadingExits/fadeOutLeft.js"></script>
+    <script src="../src/fadingExits/fadeOutLeftBig.js"></script>
+    <script src="../src/fadingExits/fadeOutRight.js"></script>
+    <script src="../src/fadingExits/fadeOutRightBig.js"></script>
+    <script src="../src/fadingExits/fadeOutUp.js"></script>
+    <script src="../src/fadingExits/fadeOutUpBig.js"></script>
+    <script src="../src/flippers/flip.js"></script>
+    <script src="../src/flippers/flipInX.js"></script>
+    <script src="../src/flippers/flipInY.js"></script>
+    <script src="../src/flippers/flipOutX.js"></script>
+    <script src="../src/flippers/flipOutY.js"></script>
+    <script src="../src/lightspeed/lightSpeedIn.js"></script>
+    <script src="../src/lightspeed/lightSpeedOut.js"></script>
+    <script src="../src/rotatingEntrances/rotateIn.js"></script>
+    <script src="../src/rotatingEntrances/rotateInDownLeft.js"></script>
+    <script src="../src/rotatingEntrances/rotateInDownRight.js"></script>
+    <script src="../src/rotatingEntrances/rotateInUpLeft.js"></script>
+    <script src="../src/rotatingEntrances/rotateInUpLeft.js"></script>
+    <script src="../src/rotatingEntrances/rotateInUpRight.js"></script>
+    <script src="../src/rotatingExits/rotateOut.js"></script>
+    <script src="../src/rotatingExits/rotateOutDownLeft.js"></script>
+    <script src="../src/rotatingExits/rotateOutDownRight.js"></script>
+    <script src="../src/rotatingExits/rotateOutUpLeft.js"></script>
+    <script src="../src/slidingEntrances/slideInDown.js"></script>
+    <script src="../src/slidingEntrances/slideInLeft.js"></script>
+    <script src="../src/slidingEntrances/slideInRight.js"></script>
+    <script src="../src/slidingEntrances/slideInUp.js"></script>
+    <script src="../src/slidingExits/slideOutDown.js"></script>
+    <script src="../src/slidingExits/slideOutLeft.js"></script>
+    <script src="../src/slidingExits/slideOutRight.js"></script>
+    <script src="../src/slidingExits/slideOutUp.js"></script>
+    <script src="../src/specials/hinge.js"></script>
+    <script src="../src/specials/rollIn.js"></script>
+    <script src="../src/specials/rollOut.js"></script>
+    <script src="../src/zoomingEntrances/zoomIn.js"></script>
+    <script src="../src/zoomingEntrances/zoomInDown.js"></script>
+    <script src="../src/zoomingEntrances/zoomInLeft.js"></script>
+    <script src="../src/zoomingEntrances/zoomInRight.js"></script>
+    <script src="../src/zoomingEntrances/zoomInUp.js"></script>
+    <script src="../src/zoomingExits/zoomOut.js"></script>
+    <script src="../src/zoomingExits/zoomOutDown.js"></script>
+    <script src="../src/zoomingExits/zoomOutLeft.js"></script>
+    <script src="../src/zoomingExits/zoomOutRight.js"></script>
+    <script src="../src/zoomingExits/zoomOutUp.js"></script>
+
+
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <style>
+        #target1 {
+            position: absolute;
+            top: 500px;
+            left: 500px;
+            display: block;
+            width: 150px;
+            height: 50px;
+            background-color: red;
+        }
+        
+        #target2 {
+            position: absolute;
+            top: 500px;
+            left: 700px;
+            display: block;
+            width: 150px;
+            height: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="logo1" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg">
+    <img id="logo2" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg">
+    <img id="logo3" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg">
+    <div id="target1">js</div>
+    <div id="target2" class="animated zoomOutUp">css</div>
+</body>
+
+</html>
