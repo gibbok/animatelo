@@ -1,10 +1,54 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+﻿; (function(window){
+   'use strict';
+    var test = {
+        elmMenuAnimations: null,
+        elmButtonAnimate: null,
+        menuSelection : null,
+        init: function(){
+            document.addEventListener('DOMContentLoaded', function() {
+                this.getMenuAnimations();
+                this.getButtonAnimate();
+                this.getMenuAnimationsSelectedValue();
+                this.menuAnimationsListener();
+                this.buttonAnimateListener();
+            }.bind(this));
+        },
+        getMenuAnimations: function() {
+            this.elmMenuAnimations = document.querySelector('#menu-animations');
+        },
+        getButtonAnimate: function() {
+            this.elmButtonAnimate = document.querySelector('#button-animate');
+        },
+        getMenuAnimationsDefault: function(){
+            debugger
+            this.menuSelection = this.elmMenuAnimations.selected.value;
+        },
+        getMenuAnimationsSelectedValue: function(){
+            this.menuSelection =  this.elmMenuAnimations.selectedOptions[0].value;
+        },
+        menuAnimationsListener:function() {
+                this.elmMenuAnimations.addEventListener('change', function(event){
+                    this.getMenuAnimationsSelectedValue();
+            }.bind(this));
+        },
+        buttonAnimateListener:function() {
+            this.elmButtonAnimate.addEventListener('click', function(event){
+                event.preventDefault();
+                this.animate();
+            }.bind(this));
+        },
+        animate:function(){
+            window.animatejs[this.menuSelection]('#target');
+        },
+    };
+test.init();
+})(window);
+
+/*
     //var logos = document.querySelectorAll('.logo');
     //var logos = document.querySelectorAll('#logo1');
     //var logos = '#logo3';
     //var logos = '.logo';
-    var logos = '#target1';
-
     //var players = window.animatejs.bounce(logos);
     //var players = window.animatejs.flash(logos);
     //var players = window.animatejs.pulse(logos);
@@ -80,26 +124,6 @@
     //var players = window.animatejs.zoomOutDown(logos);
     //var players = window.animatejs.zoomOutLeft(logos);
     //var players = window.animatejs.zoomOutRight(logos);
-    var players = window.animatejs.zoomOutUp(logos);
 
+ */
 
-
-
-    //var players = window.animatejs.shake('#logos');
-
-    // var players = window.animatejs.bounce(logos, {
-    //     duration: 1000,
-    //     delay: 2000,
-    //     iterations: Infinity,
-    //     direction: 'normal',
-    //     fill: 'both'
-    // });
-});
-
-/*
-    duration: 700, //milliseconds
-    delay: 10, //milliseconds
-    iterations: Infinity, //or a number
-    direction: 'alternate', //'normal', 'reverse', etc.
-    fill: 'forwards' //'backwards', 'both', 'none', 'auto'
-*/
