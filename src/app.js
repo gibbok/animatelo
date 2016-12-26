@@ -68,8 +68,8 @@
     //var players = window.animatejs.slideOutLeft(logos);
     //var players = window.animatejs.slideOutRight(logos);
     // var players = window.animatejs.slideOutUp(logos);
-    var players = window.animatejs.hinge(logos);
-
+    //var players = window.animatejs.hinge(logos);
+    var players = window.animatejs.rollIn(logos);
 
 
     //var players = window.animatejs.shake('#logos');

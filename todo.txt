@@ -2,14 +2,13 @@
 TODO
 
 
-node keyframes-tool ../animate.css/source/specials/rollIn.css ../animate.js/src/specials/rollIn.json
 node keyframes-tool ../animate.css/source/specials/rollOut.css ../animate.js/src/specials/rollOut.json
 
 
 -------------------------------------------
 PROGRESS
 
-node keyframes-tool ../animate.css/source/specials/hinge.css ../animate.js/src/specials/hinge.json
+node keyframes-tool ../animate.css/source/specials/rollIn.css ../animate.js/src/specials/rollIn.json
 
 
 
@@ -100,7 +99,8 @@ node keyframes-tool ../animate.css/source/sliding_exits/slideOutLeft.css ../anim
 node keyframes-tool ../animate.css/source/sliding_exits/slideOutRight.css ../animate.js/src/slidingExits/slideOutRight.json
 node keyframes-tool ../animate.css/source/sliding_exits/slideOutUp.css ../animate.js/src/slidingExits/slideOutUp.json
 
-
+specials
+node keyframes-tool ../animate.css/source/specials/hinge.css ../animate.js/src/specials/hinge.json
 
 
 -------------------------------------------
