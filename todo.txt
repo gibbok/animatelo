@@ -8,7 +8,6 @@ node keyframes-tool ../animate.css/source/sliding_entrances/slideInUp.css ../ani
 -------------------------------------------
 PROGRESS
 
-node keyframes-tool ../animate.css/source/sliding_entrances/slideInLeft.css ../animate.js/src/slidingEntrances/slideInLeft.json
 
 
 -------------------------------------------
@@ -89,6 +88,11 @@ node keyframes-tool ../animate.css/source/rotating_exits/rotateOutUpRight.css ..
 
 slidingEntrances
 node keyframes-tool ../animate.css/source/sliding_entrances/slideInDown.css ../animate.js/src/slidingEntrances/slideInDown.json
+node keyframes-tool ../animate.css/source/sliding_entrances/slideInLeft.css ../animate.js/src/slidingEntrances/slideInLeft.json
+
+
+
+
 
 -------------------------------------------
 NOT DONE
