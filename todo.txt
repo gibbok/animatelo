@@ -1,15 +1,12 @@
 -------------------------------------------
 TODO
 
-node keyframes-tool ../animate.css/source/rotating_entrances/rotateInUpLeft.css ../animate.js/src/rotatingEntrances/rotateInUpLeft.json
-node keyframes-tool ../animate.css/source/rotating_entrances/rotateInUpRight.css ../animate.js/src/rotatingEntrances/rotateInUpRight.json
 
 
 
 -------------------------------------------
 PROGRESS
-
-node keyframes-tool ../animate.css/source/rotating_entrances/rotateInDownRight.css ../animate.js/src/rotatingEntrances/rotateInDownRight.json
+node keyframes-tool ../animate.css/source/rotating_entrances/rotateInUpRight.css ../animate.js/src/rotatingEntrances/rotateInUpRight.json
 
 -------------------------------------------
 DONE
@@ -76,6 +73,9 @@ node keyframes-tool ../animate.css/source/lightspeed/lightSpeedOut.css ../animat
 rotatingEntrances
 node keyframes-tool ../animate.css/source/rotating_entrances/rotateIn.css ../animate.js/src/rotatingEntrances/rotateIn.json
 node keyframes-tool ../animate.css/source/rotating_entrances/rotateInDownLeft.css ../animate.js/src/rotatingEntrances/rotateInDownLeft.json
+node keyframes-tool ../animate.css/source/rotating_entrances/rotateInDownRight.css ../animate.js/src/rotatingEntrances/rotateInDownRight.json
+node keyframes-tool ../animate.css/source/rotating_entrances/rotateInUpLeft.css ../animate.js/src/rotatingEntrances/rotateInUpLeft.json
+
 
 
 
