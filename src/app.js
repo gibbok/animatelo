@@ -71,8 +71,8 @@
     //var players = window.animatejs.hinge(logos);
     //var players = window.animatejs.rollIn(logos);
     //var players = window.animatejs.rollOut(logos);
-    var players = window.animatejs.zoomIn(logos);
-
+    //var players = window.animatejs.zoomIn(logos);
+    var players = window.animatejs.zoomInDown(logos);
 
 
 
