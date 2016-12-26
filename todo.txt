@@ -3,11 +3,15 @@ TODO
 
 
 
+node keyframes-tool ../animate.css/source/zooming_exits/zoomOutDown.css ../animate.js/src/zoomingExits/zoomOutDown.json
+node keyframes-tool ../animate.css/source/zooming_exits/zoomOutLeft.css ../animate.js/src/zoomingExits/zoomOutLeft.json
+node keyframes-tool ../animate.css/source/zooming_exits/zoomOutRight.css ../animate.js/src/zoomingExits/zoomOutRight.json
+node keyframes-tool ../animate.css/source/zooming_exits/zoomOutUp.css ../animate.js/src/zoomingExits/zoomOutUp.json
 
 -------------------------------------------
 PROGRESS
 
-node keyframes-tool ../animate.css/source/zooming_entrances/zoomInUp.css ../animate.js/src/zoomingEntrances/zoomInUp.json
+node keyframes-tool ../animate.css/source/zooming_exits/zoomOut.css ../animate.js/src/zoomingExits/zoomOut.json
 
 
 -------------------------------------------
@@ -107,9 +111,9 @@ node keyframes-tool ../animate.css/source/zooming_entrances/zoomIn.css ../animat
 node keyframes-tool ../animate.css/source/zooming_entrances/zoomInDown.css ../animate.js/src/zoomingEntrances/zoomInDown.json
 node keyframes-tool ../animate.css/source/zooming_entrances/zoomInLeft.css ../animate.js/src/zoomingEntrances/zoomInLeft.json
 node keyframes-tool ../animate.css/source/zooming_entrances/zoomInRight.css ../animate.js/src/zoomingEntrances/zoomInRight.json
+node keyframes-tool ../animate.css/source/zooming_entrances/zoomInUp.css ../animate.js/src/zoomingEntrances/zoomInUp.json
 
-
-
+zooming_exits
 
 -------------------------------------------
 NOT DONE
