@@ -61,12 +61,14 @@
     //var players = window.animatejs.rotateOutUpLeft(logos);
     //var players = window.animatejs.rotateOutUpRight(logos);
     //var players = window.animatejs.slideInDown(logos);
-    // var players = window.animatejs.slideInLeft(logos);
+    //var players = window.animatejs.slideInLeft(logos);
     //var players = window.animatejs.slideInRight(logos);
     //var players = window.animatejs.slideInUp(logos);
     //var players = window.animatejs.slideOutDown(logos);
+    //var players = window.animatejs.slideOutLeft(logos);
+    var players = window.animatejs.slideOutRight(logos);
 
-    var players = window.animatejs.slideOutLeft(logos);
+
 
     //var players = window.animatejs.shake('#logos');
 
