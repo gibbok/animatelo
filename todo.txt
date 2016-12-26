@@ -3,10 +3,10 @@ TODO
 
 
 
-node keyframes-tool ../animate.css/source/zooming_exits/zoomOutUp.css ../animate.js/src/zoomingExits/zoomOutUp.json
 
 -------------------------------------------
 PROGRESS
+
 
 
 -------------------------------------------
@@ -113,9 +113,8 @@ node keyframes-tool ../animate.css/source/zooming_exits/zoomOut.css ../animate.j
 node keyframes-tool ../animate.css/source/zooming_exits/zoomOutDown.css ../animate.js/src/zoomingExits/zoomOutDown.json
 node keyframes-tool ../animate.css/source/zooming_exits/zoomOutLeft.css ../animate.js/src/zoomingExits/zoomOutLeft.json
 node keyframes-tool ../animate.css/source/zooming_exits/zoomOutRight.css ../animate.js/src/zoomingExits/zoomOutRight.json
+node keyframes-tool ../animate.css/source/zooming_exits/zoomOutUp.css ../animate.js/src/zoomingExits/zoomOutUp.json
 
 
 
 
--------------------------------------------
-NOT DONE
