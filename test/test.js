@@ -1,17 +1,32 @@
 ﻿; (function(window){
    'use strict';
     var test = {
+        data: null,
         elmMenuAnimations: null,
         elmButtonAnimate: null,
         menuSelection : null,
         init: function(){
             document.addEventListener('DOMContentLoaded', function() {
-                this.getMenuAnimations();
-                this.getButtonAnimate();
-                this.getMenuAnimationsSelectedValue();
-                this.menuAnimationsListener();
-                this.buttonAnimateListener();
+                this.getData();
             }.bind(this));
+        },
+        logic:function(data){
+            this.getMenuAnimations();
+            this.getButtonAnimate();
+            this.getMenuAnimationsSelectedValue();
+            this.menuAnimationsListener();
+            this.buttonAnimateListener();
+        },
+        getData: function(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    debugger
+                    alert('Success: ' + xhttp.responseText);
+                }
+            };
+            xhttp.open('GET', '../animatejsConfig.json', true);
+            xhttp.send();
         },
         getMenuAnimations: function() {
             this.elmMenuAnimations = document.querySelector('#menu-animations');
