@@ -7,8 +7,6 @@ node keyframes-tool ../animate.css/source/zooming_exits/zoomOutUp.css ../animate
 
 -------------------------------------------
 PROGRESS
-node keyframes-tool ../animate.css/source/zooming_exits/zoomOutRight.css ../animate.js/src/zoomingExits/zoomOutRight.json
-
 
 
 -------------------------------------------
@@ -114,6 +112,8 @@ zooming_exits
 node keyframes-tool ../animate.css/source/zooming_exits/zoomOut.css ../animate.js/src/zoomingExits/zoomOut.json
 node keyframes-tool ../animate.css/source/zooming_exits/zoomOutDown.css ../animate.js/src/zoomingExits/zoomOutDown.json
 node keyframes-tool ../animate.css/source/zooming_exits/zoomOutLeft.css ../animate.js/src/zoomingExits/zoomOutLeft.json
+node keyframes-tool ../animate.css/source/zooming_exits/zoomOutRight.css ../animate.js/src/zoomingExits/zoomOutRight.json
+
 
 
 

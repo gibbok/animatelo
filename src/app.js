@@ -79,8 +79,11 @@
     //var players = window.animatejs.zoomOut(logos);
     //var players = window.animatejs.zoomOutDown(logos);
     //var players = window.animatejs.zoomOutLeft(logos);
+    //var players = window.animatejs.zoomOutRight(logos);
+    var players = window.animatejs.zoomOutUp(logos);
 
-    var players = window.animatejs.zoomOutRight(logos);
+
+
 
     //var players = window.animatejs.shake('#logos');
 
