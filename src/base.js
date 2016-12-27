@@ -5,8 +5,7 @@
         delay: 0,
         iterations: 1,
         direction: 'normal',
-        fill: 'both',
-        playbackRate: 1
+        fill: 'both'
     },
         _UUID = function () {
             var d = new Date().getTime(),
@@ -16,24 +15,57 @@
                     return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
                 });
             return uuid;
-        };
+        },
+        _select = function (selector) {
+            var nodeList,
+                isNodeList = selector instanceof NodeList,
+                isNode = selector instanceof Node,
+                isString = typeof selector === 'string';
+            if (isNodeList) {
+                nodeList = selector;
+            } else if (isNode) {
+                nodeList[selector];
+            } else if (isString) {
+                nodeList = document.querySelectorAll(selector)
+            } else {
+                throw 'selector is invaid';
+            }
+            return nodeList;
+        },
+        _validate = function (options) {
+            var directionValid = [
+                'normal',
+                'reverse',
+                'alternate',
+                'alternate-reverse',
+                'initial'
+            ],
+                fillValid = [
+                    'none',
+                    'forwards',
+                    'backwards',
+                    'both-reverse',
+                    'initial'
+                ];
+            if (typeof options.duration !== 'number') {
+                throw 'parameter duration is invalid';
+            }
+            if (typeof options.delay !== 'number') {
+                throw 'parameter delay is invalid';
+            }
+            if (typeof options.iterations !== 'number') {
+                throw 'parameter iterations is invalid';
+            }
 
-    animatejs._select = function (selector) {
-        var nodeList,
-            isNodeList = selector instanceof NodeList,
-            isNode = selector instanceof Node,
-            isString = typeof selector === 'string';
-        if (isNodeList) {
-            nodeList = selector;
-        } else if (isNode) {
-            nodeList[selector];
-        } else if (isString) {
-            nodeList = document.querySelectorAll(selector)
-        } else {
-            throw 'selector is invaid';
-        }
-        return nodeList;
-    };
+            if (typeof options.direction !== 'string' ||
+                directionValid.indexOf(options.direction) === -1) {
+                throw 'parameter direction is invalid';
+            }
+            if (typeof options.fill !== 'string' ||
+                directionValid.indexOf(options.direction) === -1) {
+                throw 'parameter fill is invalid';
+            }
+        };
 
     animatejs._animate = function (selector, keyframes, optionsArg) {
         var options = {
@@ -45,9 +77,9 @@
             id: optionsArg && 'id' in optionsArg ? optionsArg.id : _UUID()
         },
             hasUserId = optionsArg && 'id' in optionsArg ? true : false,
-            nodeList = animatejs._select(selector),
+            nodeList = _select(selector),
             players = [];
-            
+        _validate(options);
         nodeList.forEach(function (node, index) {
             var player = node.animate(keyframes, options);
             if (hasUserId) {

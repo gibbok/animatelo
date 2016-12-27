@@ -93,8 +93,8 @@
     <div id="test-target">Animate.js</div>
     <form id="test-form">
       <div>
-          <label for="test-form-select-animations">Animation</label>
-          <select id="test-form-select-animations">
+        <label for="test-form-select-animations">Animation</label>
+        <select id="test-form-select-animations">
 
             <optgroup label="Attention Seekers">
               <option value="bounce" selected="selected">bounce</option>
@@ -216,20 +216,20 @@
       </div>
       <div>
         <label for="test-form-input-duration">Duration</label>
-        <input id="test-form-input-duration" type="number" data-prop="duration">
+        <input id="test-form-input-duration" type="number" value="1000" required data-prop="duration">
       </div>
       <div>
         <label for="test-form-input-delay">Delay</label>
-        <input id="test-form-input-delay" type="number" data-prop="delay">
+        <input id="test-form-input-delay" type="number" value="0" required data-prop="delay">
       </div>
       <div>
         <label for="test-form-input-iterations">Iterations</label>
-        <input id="test-form-input-iterations" type="number" data-prop="iterations">
+        <input id="test-form-input-iterations" type="number" value="1" required data-prop="iterations">
       </div>
       <div>
         <label for="test-form-input-direction">Direction</label>
         <select id="test-form-input-direction" data-prop="direction">
-          <option value="normal">normal</option>
+          <option value="normal" selected>normal</option>
           <option value="reverse">reverse</option>
           <option value="alternate">alternate</option>
           <option value="alternate-reverse">alternate-reverse</option>
@@ -242,15 +242,15 @@
           <option value="none">none</option>
           <option value="forwards">forwards</option>
           <option value="backwards">backwards</option>
-          <option value="both">alternate-reverse</option>
+          <option value="both" selected>alternate-reverse</option>
           <option value="initial">initial</option>
         </select>
       </div>
       <div>
-        <button id="test-form-btn-animate" class="">Animate it</button>
+        <button id="test-form-btn-animate">Animate it</button>
       </div>
-      <div>
-        <button id="test-form-btn-reset" class="">Reset</button>
+      <div> 
+        <button id="test-form-btn-reset">Reset</button>
       </div>
     </form>
   </div>

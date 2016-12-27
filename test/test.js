@@ -50,8 +50,14 @@
             for (var i = 0, len = _elmForm.length; i < len; i++) {
                 var item = _elmForm[i];
                 var prop = item.dataset.prop;
-                if (prop) {
-                    result[prop] = item.value;
+                var value;
+                if (prop) {     
+                    if (prop === 'direction' || prop === 'fill') {
+                        value = item.value;
+                    } else {
+                        value = Number(item.value);
+                    }
+                    result[prop] = value;
                 }
             }
             return result;
