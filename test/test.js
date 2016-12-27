@@ -1,6 +1,9 @@
 ﻿; (function (window) {
     'use strict';
-    var _data = null,
+    var _targetId = '#test-target',
+        _menuAnimationId = '#test-form-select-animations',
+        _buttonAnimateId = '#test-form-btn-animate',
+        _formId = '#test-form',
         _elmMenuAnimations = null,
         _elmButtonAnimate = null,
         _elmForm = null,
@@ -19,13 +22,13 @@
             _buttonAnimateListener();
         },
         _getMenuAnimations = function () {
-            _elmMenuAnimations = document.querySelector('#test-form-select-animations');
+            _elmMenuAnimations = document.querySelector(_menuAnimationId);
         },
         _getButtonAnimate = function () {
-            _elmButtonAnimate = document.querySelector('#test-form-btn-animate');
+            _elmButtonAnimate = document.querySelector(_buttonAnimateId);
         },
         _getForm = function () {
-            _elmForm = document.querySelector('#test-form');
+            _elmForm = document.querySelector(_formId);
         },
         _getMenuAnimationsDefault = function () {
             _menuSelection = _elmMenuAnimations.selected.value;
@@ -51,7 +54,7 @@
                 var item = _elmForm[i];
                 var prop = item.dataset.prop;
                 var value;
-                if (prop) {     
+                if (prop) {
                     if (prop === 'direction' || prop === 'fill') {
                         value = item.value;
                     } else {
@@ -64,7 +67,7 @@
         },
         _animate = function () {
             var parameters = _getCustomParameters();
-            window.animatejs[menuSelection]('#test-target', parameters);
+            window.animatejs[menuSelection](_targetId, parameters);
         };
     init();
 })(window)
