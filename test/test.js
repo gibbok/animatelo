@@ -4,9 +4,13 @@
         _menuAnimationId = '#test-form-select-animations',
         _buttonAnimateId = '#test-form-btn-animate',
         _formId = '#test-form',
+        _buttonResetId = '#test-form-btn-reset',
         _elmMenuAnimations = null,
         _elmButtonAnimate = null,
+        _elmButtonReset = null,
         _elmForm = null,
+        _submitedBy = '',
+        _player = null,
         menuSelection = null,
         init = function () {
             document.addEventListener('DOMContentLoaded', function () {
@@ -16,16 +20,21 @@
         _logic = function () {
             _getMenuAnimations();
             _getButtonAnimate();
+            _getButtonReset();
             _getForm();
             _getMenuAnimationsSelectedValue();
-            _menuAnimationsListener();
+            _formListener();
             _buttonAnimateListener();
+            _buttonResetListener();
         },
         _getMenuAnimations = function () {
             _elmMenuAnimations = document.querySelector(_menuAnimationId);
         },
         _getButtonAnimate = function () {
             _elmButtonAnimate = document.querySelector(_buttonAnimateId);
+        },
+        _getButtonReset = function () {
+            _elmButtonReset = document.querySelector(_buttonResetId);
         },
         _getForm = function () {
             _elmForm = document.querySelector(_formId);
@@ -36,16 +45,34 @@
         _getMenuAnimationsSelectedValue = function () {
             menuSelection = _elmMenuAnimations.selectedOptions[0].value;
         },
-        _menuAnimationsListener = function () {
-            _elmMenuAnimations.addEventListener('change', function (event) {
-                _getMenuAnimationsSelectedValue();
-                _animate();
+        _formListener = function () {
+            _elmForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                if (_submitedBy === 'animate') {
+                    _getMenuAnimationsSelectedValue();
+                    _animate();
+                } else if (_submitedBy === 'reset') {
+                    _resetForm();
+                    _resetPlayer();
+                }
             }.bind(this));
+        },
+        _resetForm = function () {
+            _elmForm.reset();
+        },
+        _resetPlayer = function(){
+            if(_player){
+                _player.cancel();
+            }       
         },
         _buttonAnimateListener = function () {
             _elmButtonAnimate.addEventListener('click', function (event) {
-                event.preventDefault();
-                _animate();
+                _submitedBy = 'animate';
+            }.bind(this));
+        },
+        _buttonResetListener = function () {
+            _elmButtonReset.addEventListener('click', function (event) {
+                _submitedBy = 'reset';
             }.bind(this));
         },
         _getCustomParameters = function () {
@@ -67,7 +94,7 @@
         },
         _animate = function () {
             var parameters = _getCustomParameters();
-            window.animatejs[menuSelection](_targetId, parameters);
+            _player = window.animatejs[menuSelection](_targetId, parameters)[0];
         };
     init();
 })(window)

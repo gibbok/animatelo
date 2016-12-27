@@ -44,7 +44,7 @@
                     'none',
                     'forwards',
                     'backwards',
-                    'both-reverse',
+                    'both',
                     'initial'
                 ];
             if (typeof options.duration !== 'number') {
