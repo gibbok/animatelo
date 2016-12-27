@@ -42,7 +42,6 @@
             iterations: optionsArg && 'iterations' in optionsArg ? optionsArg.iterations : _defaultOptions.iterations,
             direction: optionsArg && 'direction' in optionsArg ? optionsArg.direction : _defaultOptions.direction,
             fill: optionsArg && 'fill' in optionsArg ? optionsArg.fill : _defaultOptions.fill,
-            playbackRate: optionsArg && 'fill' in optionsArg ? optionsArg.playbackRate : _defaultOptions.playbackRate,
             id: optionsArg && 'id' in optionsArg ? optionsArg.id : _UUID()
         },
             hasUserId = optionsArg && 'id' in optionsArg ? true : false,
