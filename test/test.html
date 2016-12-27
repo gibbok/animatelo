@@ -89,15 +89,12 @@
 </head>
 
 <body>
-  <div id="test-container">
-    <div id="test-container-item-left">
-      <div id="test-target">Animate.js</div>
-    </div>
-    <div id="test-container-item-right">
-      <form id="test-form">
-        <div>
-          <label for="test-form-select-animations">Type</label>
-          <select id="test-form-select-animations" class="">
+  <div id="wrapper">
+    <div id="test-target">Animate.js</div>
+    <form id="test-form">
+      <div>
+        <label for="test-form-select-animations">Type</label>
+        <select id="test-form-select-animations" class="">
         <optgroup label="Attention Seekers">
           <option value="bounce" selected="selected">bounce</option>
           <option value="flash">flash</option>
@@ -202,42 +199,41 @@
           <option value="rollOut">rollOut</option>
         </optgroup>
       </select>
-        </div>
-        <div>
-          <label for="test-form-input-duration">Duration</label>
-          <input id="test-form-input-duration" type="number">
-        </div>
-        <div>
-          <label for="test-form-input-delay">Delay</label>
-          <input id="test-form-input-delay" type="number">
-        </div>
-        <div>
-          <label for="test-form-input-iterations">Iterations</label>
-          <input id="test-form-input-iterations" type="number">
-        </div>
-        <div>
-          <label for="test-form-input-direction">Direction</label>
-          <select id="test-form-input-direction">
+      </div>
+      <div>
+        <label for="test-form-input-duration">Duration</label>
+        <input id="test-form-input-duration" type="number">
+      </div>
+      <div>
+        <label for="test-form-input-delay">Delay</label>
+        <input id="test-form-input-delay" type="number">
+      </div>
+      <div>
+        <label for="test-form-input-iterations">Iterations</label>
+        <input id="test-form-input-iterations" type="number">
+      </div>
+      <div>
+        <label for="test-form-input-direction">Direction</label>
+        <select id="test-form-input-direction">
       <option value="normal">normal</option>
       <option value="reverse">reverse</option>
       <option value="alternate">alternate</option>
       <option value="alternate-reverse">alternate-reverse</option>
       <option value="initial">initial</option>
     </select>
-        </div>
-        <div>
-          <label for="test-form-input-fill">Fill</label>
-          <select id="test-form-input-fill">
+      </div>
+      <div>
+        <label for="test-form-input-fill">Fill</label>
+        <select id="test-form-input-fill">
       <option value="none">none</option>
       <option value="forwards">forwards</option>
       <option value="backwards">backwards</option>
       <option value="both">alternate-reverse</option>
       <option value="initial">initial</option>
     </select>
-        </div>
-        <button id="test-form-btn-animate" class="">Animate it</button>
-      </form>
-    </div>
+      </div>
+      <button id="test-form-btn-animate" class="">Animate it</button>
+    </form>
   </div>
 </body>
 

@@ -4,26 +4,23 @@ html {
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-#test-container{
-  width: 100%;
-  background-color: red;
-  display: -ms-flex;
-	display: -webkit-flex;
-	display: flex
-}
-#test-container-item-left{
-    width: 50%;
-      background-color: yellow;
-}
-#test-container-item-right {
-  width: 50%;
-        background-color: darkorange;
 
+#test-target {
+  font-size: 5rem;
+  font-weight: 100;
+  display: block;
+  margin: auto;
+  width: 25rem;
+  height: 20rem;
+  text-align: center;
+  line-height: 20rem;
 }
 
-#test-target{
-    font-size: 5rem;
-    font-weight: 100;
+#test-form {
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 10rem;
 }
 
 #test-form div{
