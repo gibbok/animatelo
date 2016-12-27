@@ -6,13 +6,17 @@ html {
 }
 
 #test-target {
+  font-size: 80px;
   font-size: 5rem;
   font-weight: 100;
   display: block;
   margin: auto;
+  width: 400px;
   width: 25rem;
+  height: 320px;
   height: 20rem;
   text-align: center;
+  line-height: 320px;
   line-height: 20rem;
 }
 
@@ -20,14 +24,17 @@ html {
   text-align: center;
   display: block;
   margin: auto;
+  width: 160px;
   width: 10rem;
 }
 
 #test-form div{
+  margin-bottom: 12px;
   margin-bottom: 0.75rem;
 }
 
 #test-form label, #test-form button, #test-form input, #test-form select{
+  width: 160px;
   width: 10rem;
   display: block;
 }
