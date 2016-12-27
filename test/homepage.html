@@ -2,8 +2,9 @@
 <html>
 
 <head>
-  <title>Animate.js - Test page</title>
+  <title>Animate.js</title>
   <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, minimal-ui">
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link href="//fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700" rel="stylesheet" type="text/css">
   <link href="./test.css" rel="stylesheet">
@@ -88,13 +89,19 @@
   <script src="./test.js"></script>
 </head>
 
-
 <body>
-  <div id="test-target">Animate.js</div>
-  <form>
-    <select id="test-select-animations" class="">
+  <header class="site__header island">
+    <div class="wrap">
+      <span id="animationSandbox" style="display: block;" class=""><h1 class="site__title mega">Animate.js</h1></span>
+      <span class="beta subhead">Just-add-water Web Animations</span>
+    </div>
+  </header>
+  <main class="site__content island" role="content">
+    <div class="wrap">
+      <form>
+        <select id="menuAnimations" class="input input--dropdown js--animations">
         <optgroup label="Attention Seekers">
-          <option value="bounce" selected="selected">bounce</option>
+          <option value="bounce">bounce</option>
           <option value="flash">flash</option>
           <option value="pulse">pulse</option>
           <option value="rubberBand">rubberBand</option>
@@ -212,8 +219,19 @@
         </optgroup>
       </select>
 
-    <button id="test-btn-animate" class="">Animate it</button>
-  </form>
+        <button id="buttonAnimate" class="butt js--triggerAnimation">Animate it</button>
+      </form>
+      <hr>
+      <p class="meta"><a href="https://github.com/gibbok/animate.js/master/animate.js" download="animate.js">Download Animate.js</a> or
+        <a
+          href="//github.com/daneden/animate.css">View on GitHub</a>
+      </p>
+      <p><small>Created by <a href="//github.com/gibbok">GibboK</a>.</small></p>
+      <p><small>Based on animations from <a href="//github.com/daneden/animate.css">Animate.css</a>.</small></p>
+
+    </div>
+  </main>
+
 </body>
 
 </html>

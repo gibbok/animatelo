@@ -14,7 +14,7 @@ gulp.task('connect', function () {
 
 gulp.task('open', function () {
     // open browser
-    var uri = 'http://localhost:8080/src/app.html';
+    var uri = 'http://localhost:8080/test/test.html';
     open(uri);
 });
 

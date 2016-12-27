@@ -1,0 +1,12 @@
+html {
+  font: 100%/1.5 "Roboto", Verdana, sans-serif;
+  width: 100%;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#test-target{
+    font-size: 3rem;
+    font-weight: 100;
+}
