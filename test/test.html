@@ -88,11 +88,16 @@
   <script src="./test.js"></script>
 </head>
 
-
 <body>
-  <div id="test-target">Animate.js</div>
-  <form>
-    <select id="test-select-animations" class="">
+  <div id="test-container">
+    <div id="test-container-item-left">
+      <div id="test-target">Animate.js</div>
+    </div>
+    <div id="test-container-item-right">
+      <form id="test-form">
+        <div>
+          <label for="test-form-select-animations">Type</label>
+          <select id="test-form-select-animations" class="">
         <optgroup label="Attention Seekers">
           <option value="bounce" selected="selected">bounce</option>
           <option value="flash">flash</option>
@@ -104,7 +109,6 @@
           <option value="wobble">wobble</option>
           <option value="jello">jello</option>
         </optgroup>
-
         <optgroup label="Bouncing Entrances">
           <option value="bounceIn">bounceIn</option>
           <option value="bounceInDown">bounceInDown</option>
@@ -112,7 +116,6 @@
           <option value="bounceInRight">bounceInRight</option>
           <option value="bounceInUp">bounceInUp</option>
         </optgroup>
-
         <optgroup label="Bouncing Exits">
           <option value="bounceOut">bounceOut</option>
           <option value="bounceOutDown">bounceOutDown</option>
@@ -120,7 +123,6 @@
           <option value="bounceOutRight">bounceOutRight</option>
           <option value="bounceOutUp">bounceOutUp</option>
         </optgroup>
-
         <optgroup label="Fading Entrances">
           <option value="fadeIn">fadeIn</option>
           <option value="fadeInDown">fadeInDown</option>
@@ -132,7 +134,6 @@
           <option value="fadeInUp">fadeInUp</option>
           <option value="fadeInUpBig">fadeInUpBig</option>
         </optgroup>
-
         <optgroup label="Fading Exits">
           <option value="fadeOut">fadeOut</option>
           <option value="fadeOutDown">fadeOutDown</option>
@@ -144,7 +145,6 @@
           <option value="fadeOutUp">fadeOutUp</option>
           <option value="fadeOutUpBig">fadeOutUpBig</option>
         </optgroup>
-
         <optgroup label="Flippers">
           <option value="flip">flip</option>
           <option value="flipInX">flipInX</option>
@@ -152,12 +152,10 @@
           <option value="flipOutX">flipOutX</option>
           <option value="flipOutY">flipOutY</option>
         </optgroup>
-
         <optgroup label="Lightspeed">
           <option value="lightSpeedIn">lightSpeedIn</option>
           <option value="lightSpeedOut">lightSpeedOut</option>
         </optgroup>
-
         <optgroup label="Rotating Entrances">
           <option value="rotateIn">rotateIn</option>
           <option value="rotateInDownLeft">rotateInDownLeft</option>
@@ -165,7 +163,6 @@
           <option value="rotateInUpLeft">rotateInUpLeft</option>
           <option value="rotateInUpRight">rotateInUpRight</option>
         </optgroup>
-
         <optgroup label="Rotating Exits">
           <option value="rotateOut">rotateOut</option>
           <option value="rotateOutDownLeft">rotateOutDownLeft</option>
@@ -173,30 +170,25 @@
           <option value="rotateOutUpLeft">rotateOutUpLeft</option>
           <option value="rotateOutUpRight">rotateOutUpRight</option>
         </optgroup>
-
         <optgroup label="Sliding Entrances">
           <option value="slideInUp">slideInUp</option>
           <option value="slideInDown">slideInDown</option>
           <option value="slideInLeft">slideInLeft</option>
           <option value="slideInRight">slideInRight</option>
-
         </optgroup>
         <optgroup label="Sliding Exits">
           <option value="slideOutUp">slideOutUp</option>
           <option value="slideOutDown">slideOutDown</option>
           <option value="slideOutLeft">slideOutLeft</option>
-          <option value="slideOutRight">slideOutRight</option>
-          
-        </optgroup>
-        
+          <option value="slideOutRight">slideOutRight</option>    
+        </optgroup>     
         <optgroup label="Zoom Entrances">
           <option value="zoomIn">zoomIn</option>
           <option value="zoomInDown">zoomInDown</option>
           <option value="zoomInLeft">zoomInLeft</option>
           <option value="zoomInRight">zoomInRight</option>
           <option value="zoomInUp">zoomInUp</option>
-        </optgroup>
-        
+        </optgroup>        
         <optgroup label="Zoom Exits">
           <option value="zoomOut">zoomOut</option>
           <option value="zoomOutDown">zoomOutDown</option>
@@ -204,16 +196,69 @@
           <option value="zoomOutRight">zoomOutRight</option>
           <option value="zoomOutUp">zoomOutUp</option>
         </optgroup>
-
         <optgroup label="Specials">
           <option value="hinge">hinge</option>
           <option value="rollIn">rollIn</option>
           <option value="rollOut">rollOut</option>
         </optgroup>
       </select>
-
-    <button id="test-btn-animate" class="">Animate it</button>
-  </form>
+        </div>
+        <div>
+          <label for="test-form-input-duration">Duration</label>
+          <input id="test-form-input-duration" type="number">
+        </div>
+        <div>
+          <label for="test-form-input-delay">Delay</label>
+          <input id="test-form-input-delay" type="number">
+        </div>
+        <div>
+          <label for="test-form-input-iterations">Iterations</label>
+          <input id="test-form-input-iterations" type="number">
+        </div>
+        <div>
+          <label for="test-form-input-direction">Direction</label>
+          <select id="test-form-input-direction">
+      <option value="normal">normal</option>
+      <option value="reverse">reverse</option>
+      <option value="alternate">alternate</option>
+      <option value="alternate-reverse">alternate-reverse</option>
+      <option value="initial">initial</option>
+    </select>
+        </div>
+        <div>
+          <label for="test-form-input-fill">Fill</label>
+          <select id="test-form-input-fill">
+      <option value="none">none</option>
+      <option value="forwards">forwards</option>
+      <option value="backwards">backwards</option>
+      <option value="both">alternate-reverse</option>
+      <option value="initial">initial</option>
+    </select>
+        </div>
+        <button id="test-form-btn-animate" class="">Animate it</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
+
+<!--
+duration:
+delay:
+iterations: 
+direction: 
+fill:
+playbackRate: 
+id: 
+
+duration: 700, //milliseconds
+    easing: 'ease-in-out', //'linear', a bezier curve, etc.
+    delay: 10, //milliseconds
+    iterations: Infinity, //or a number
+    direction: 'alternate', //'normal', 'reverse', etc.
+    fill: 'forwards' //'backwards', 'both', 'none', 'auto'
+
+
+
+-->

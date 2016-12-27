@@ -17,10 +17,10 @@
             _buttonAnimateListener();
         },
         _getMenuAnimations = function() {
-            _elmMenuAnimations = document.querySelector('#test-select-animations');
+            _elmMenuAnimations = document.querySelector('#test-form-select-animations');
         },
         _getButtonAnimate = function() {
-            _elmButtonAnimate = document.querySelector('#test-btn-animate');
+            _elmButtonAnimate = document.querySelector('#test-form-btn-animate');
         },
         _getMenuAnimationsDefault = function() {
             _menuSelection = _elmMenuAnimations.selected.value;

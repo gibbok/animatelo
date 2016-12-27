@@ -1,12 +1,36 @@
 html {
   font: 100%/1.5 "Roboto", Verdana, sans-serif;
   width: 100%;
-  text-align: center;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+#test-container{
+  width: 100%;
+  background-color: red;
+  display: -ms-flex;
+	display: -webkit-flex;
+	display: flex
+}
+#test-container-item-left{
+    width: 50%;
+      background-color: yellow;
+}
+#test-container-item-right {
+  width: 50%;
+        background-color: darkorange;
+
+}
 
 #test-target{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 100;
+}
+
+#test-form div{
+  margin-bottom: 0.75rem;
+}
+
+#test-form label, #test-form button, #test-form input, #test-form select{
+  width: 10rem;
+  display: block;
 }
