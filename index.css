@@ -13,7 +13,7 @@ input, select, button, textarea {
   color: inherit;
 }
 
-.butt, .input {
+button, select {
   padding: 12px;
   padding: .75rem;
   margin: 6px;
@@ -22,11 +22,11 @@ input, select, button, textarea {
   border-radius: 4px;
 }
 
-.butt:focus, .input:focus {
+button:focus, select:focus {
   outline: none;
 }
 
-.butt {
+button {
   border: 2px solid #f35626;
   line-height: 1.375;
   padding-left: 24px;
@@ -40,17 +40,9 @@ input, select, button, textarea {
           animation: hue 60s infinite linear;
 }
 
-.input {
+select {
   border: 1px solid #c0c8c9;
   border-radius: 4px;
-}
-
-.input--dropdown {
-  background-image: url("images/ddown.png");
-  background-image: url("images/ddown.svg?3"), none;
-  background-repeat: no-repeat;
-  background-size: 1.5rem 1rem;
-  background-position: right center;
 }
 
 h1, .alpha {
