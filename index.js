@@ -44,20 +44,15 @@
                 event.preventDefault();
                 if (_submitedBy === 'animate') {
                     _getMenuAnimationsSelectedValue();
-                    _animate();
-                } else if (_submitedBy === 'reset') {
-                    _resetForm();
                     _resetPlayer();
+                    _animate();
                 }
             }.bind(this));
         },
-        _resetForm = function () {
-            _elmForm.reset();
-        },
-        _resetPlayer = function(){
-            if(_player){
+        _resetPlayer = function () {
+            if (_player) {
                 _player.cancel();
-            }       
+            }
         },
         _buttonAnimateListener = function () {
             _elmButtonAnimate.addEventListener('click', function (event) {
