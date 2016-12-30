@@ -2,40 +2,42 @@
   margin: 0;
   padding: 0;
   position: relative;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 input, select, button, textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-
   font: inherit;
   color: inherit;
 }
 
 .butt, .input {
+  padding: 12px;
   padding: .75rem;
+  margin: 6px;
   margin: .375rem;
   background-color: transparent;
   border-radius: 4px;
 }
 
-  .butt:focus, .input:focus {
-    outline: none;
-  }
+.butt:focus, .input:focus {
+  outline: none;
+}
 
 .butt {
   border: 2px solid #f35626;
   line-height: 1.375;
+  padding-left: 24px;
   padding-left: 1.5rem;
+  padding-right: 24px;
   padding-right: 1.5rem;
   font-weight: 700;
   color: #f35626;
   cursor: pointer;
   -webkit-animation: hue 60s infinite linear;
+          animation: hue 60s infinite linear;
 }
 
 .input {
@@ -43,16 +45,18 @@ input, select, button, textarea {
   border-radius: 4px;
 }
 
-  .input--dropdown {
-    background-image: url("images/ddown.png");
-    background-image: url("images/ddown.svg?3"), none;
-    background-repeat: no-repeat;
-    background-size: 1.5rem 1rem;
-    background-position: right center;
-  }
+.input--dropdown {
+  background-image: url("images/ddown.png");
+  background-image: url("images/ddown.svg?3"), none;
+  background-repeat: no-repeat;
+  background-size: 1.5rem 1rem;
+  background-position: right center;
+}
 
 h1, .alpha {
+  margin-bottom: 24px;
   margin-bottom: 1.5rem;
+  font-size: 48px;
   font-size: 3rem;
   font-weight: 100;
   line-height: 1;
@@ -60,11 +64,21 @@ h1, .alpha {
 }
 
 h2, .beta {
+  margin-bottom: 12px;
   margin-bottom: .75rem;
-
   font-weight: 400;
+  font-size: 24px;
   font-size: 1.5rem;
   line-height: 1;
+}
+
+.site__title {
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+          animation: hue 60s infinite linear;
 }
 
 @media (min-width: 650px) {
@@ -78,8 +92,8 @@ h2, .beta {
   color: #7b8993;
 }
 
-
 p, hr, form {
+  margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 
@@ -88,21 +102,25 @@ hr {
   margin-top: -1px;
   height: 1px;
   background-color: #c0c8c9;
-  background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+  background-image: -webkit-linear-gradient(bottom, #fff, #c0c8c9, #fff);
+  background-image: linear-gradient(0deg, #fff, #c0c8c9, #fff);
 }
 
 a {
   color: inherit;
   text-decoration: underline;
   -webkit-animation: hue 60s infinite linear;
+          animation: hue 60s infinite linear;
 }
 
-  a:hover {
-    color: #f35626;
-  }
+a:hover {
+  color: #f35626;
+}
 
 header, main {
+  padding: 24px;
   padding: 1.5rem;
+  max-width: 608px;
   max-width: 38rem;
   margin: 0 auto;
 }
@@ -111,9 +129,8 @@ html {
   font: 100%/1.5 "Roboto", Verdana, sans-serif;
   color: #3d464d;
   background-color: #fff;
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   width: 100%;
-
   overflow: hidden-x;
   text-align: center;
 }
@@ -137,20 +154,37 @@ html {
     max-width: 38rem;
   }
 }
-  .site__title {
+
+.site__title {
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 60s infinite linear;
-  }
+            animation: hue 60s infinite linear;
+}
 
 @-webkit-keyframes hue {
   from {
     -webkit-filter: hue-rotate(0deg);
+            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="hueRotate" color-interpolation-filters="sRGB" values="0" /></filter></svg>#filter');
+            filter: hue-rotate(0deg);
   }
 
   to {
     -webkit-filter: hue-rotate(-360deg);
+            filter: hue-rotate(-360deg);
+  }
+}
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="hueRotate" color-interpolation-filters="sRGB" values="0" /></filter></svg>#filter');
+            filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+            filter: hue-rotate(-360deg);
   }
 }
