@@ -7,6 +7,7 @@ const stylish = require('gulp-jscs-stylish');
 const uglify = require('gulp-uglify');
 const pump = require('pump');
 const rename = require('gulp-rename');
+const concat = require('gulp-concat');
 
 gulp.task('connect', function () {
     // runs connect server
@@ -33,11 +34,11 @@ gulp.task('checkcode', function () {
 
 gulp.task('build', function (cb) {
     pump([
-        gulp.src('src/*.js'),
+        gulp.src('./src/**/*.js'),
+        concat('animate.min.js'),
         uglify({
             preserveComments: 'license'
         }),
-        rename('animate.min.js'),
         gulp.dest('dist')
     ],
         cb
