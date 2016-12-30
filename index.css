@@ -188,10 +188,6 @@ html {
   $HEADER
 \*-----------------------------------*/
 
-.site__header {
-  -webkit-animation: bounceInUp 1s;
-}
-
   .site__title {
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
