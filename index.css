@@ -55,6 +55,7 @@ input, select, button, textarea {
     color: #fff;
   }
 
+
 .input {
   border: 1px solid #c0c8c9;
   border-radius: 4px;
@@ -130,13 +131,10 @@ a {
   $LAYOUT
 \*-----------------------------------*/
 
-.wrap {
+header, main {
+  padding: 1.5rem;
   max-width: 38rem;
   margin: 0 auto;
-}
-
-.island {
-  padding: 1.5rem;
 }
 
 .isle {
