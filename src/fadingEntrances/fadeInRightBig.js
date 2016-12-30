@@ -1,3 +1,4 @@
+/*! Animate.js | The MIT License (MIT) | Copyright (c) 2017 GibboK */
 ; (function (animate) {
     'use strict';
     animate.fadeInRightBig = function (selector, options) {

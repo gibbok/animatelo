@@ -1,3 +1,4 @@
+/*! Animate.js | The MIT License (MIT) | Copyright (c) 2017 GibboK */
 ; (function (animate) {
     'use strict';
     animate.rotateInDownLeft = function (selector, options) {

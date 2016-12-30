@@ -21,7 +21,8 @@
     "gulp-jshint": "^2.0.4",
     "gulp-jscs-stylish": "^1.4.0",
     "gulp-uglify":"^2.0.0",
-    "pump":"^1.0.2"
+    "pump":"^1.0.2",
+    "gulp-rename":"^1.2.2"
   },
   "author": "GibboK",
   "license": "MIT",
