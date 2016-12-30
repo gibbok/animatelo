@@ -6,7 +6,6 @@ const jshint = require('gulp-jshint');
 const stylish = require('gulp-jscs-stylish');
 const uglify = require('gulp-uglify');
 const pump = require('pump');
-const rename = require('gulp-rename');
 const concat = require('gulp-concat');
 
 gulp.task('connect', function () {
