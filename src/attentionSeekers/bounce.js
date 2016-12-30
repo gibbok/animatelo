@@ -1,6 +1,6 @@
-; (function (animatejs) {
+; (function (animate) {
     'use strict';
-    animatejs.bounce = function (selector, options) {
+    animate.bounce = function (selector, options) {
         var keyframeset = [
             {
                 animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
@@ -47,6 +47,6 @@
                 offset: 1
             }
         ];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

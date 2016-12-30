@@ -1,6 +1,6 @@
-; (function(animatejs) {
+; (function(animate) {
     'use strict';
-    animatejs.headShake = function(selector, options) {
+    animate.headShake = function(selector, options) {
         var keyframeset = [
             {
                 transform: 'translateX(0)',
@@ -31,6 +31,6 @@
                 offset: 1
             }
         ];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

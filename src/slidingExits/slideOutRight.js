@@ -1,6 +1,6 @@
-; (function (animatejs) {
+; (function (animate) {
     'use strict';
-    animatejs.slideOutRight = function (selector, options) {
+    animate.slideOutRight = function (selector, options) {
         var keyframeset = [
             {
                 visibility: 'visible',
@@ -13,6 +13,6 @@
                 offset: 1
             }
         ];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

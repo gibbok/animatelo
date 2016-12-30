@@ -1,6 +1,6 @@
-; (function (animatejs) {
+; (function (animate) {
     'use strict';
-    animatejs.hinge = function (selector, options) {
+    animate.hinge = function (selector, options) {
         var keyframeset = [
             {
                 transform: 'none',
@@ -42,6 +42,6 @@
                 offset: 1
             }
         ];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

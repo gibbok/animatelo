@@ -1,6 +1,6 @@
-; (function (animatejs) {
+; (function (animate) {
     'use strict';
-    animatejs.shake = function (selector, options) {
+    animate.shake = function (selector, options) {
         var keyframeset = [
             {
                 transform: 'translate3d(0, 0, 0)',
@@ -47,6 +47,6 @@
                 offset: 1
             }
         ];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

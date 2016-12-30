@@ -1,6 +1,6 @@
-; (function (animatejs) {
+; (function (animate) {
     'use strict';
-    animatejs.flipInY = function (selector, options) {
+    animate.flipInY = function (selector, options) {
         var keyframeset = [
             {
                 transform: 'perspective(400px) rotate3d(0, 1, 0, 90deg)',
@@ -28,6 +28,6 @@
                 offset: 1
             }
         ];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

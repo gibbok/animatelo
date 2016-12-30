@@ -4,6 +4,8 @@ const open = require('open');
 const jscs = require('gulp-jscs');
 const jshint = require('gulp-jshint');
 const stylish = require('gulp-jscs-stylish');
+const uglify = require('gulp-uglify');
+const pump = require('pump');
 
 gulp.task('connect', function () {
     // runs connect server
@@ -26,4 +28,14 @@ gulp.task('checkcode', function () {
         .on('error', function () { })
         .pipe(stylish.combineWithHintResults())
         .pipe(jshint.reporter('jshint-stylish'));
+});
+
+gulp.task('build', function (cb) {
+    pump([
+        gulp.src('src/*.js'),
+        uglify(),
+        gulp.dest('dist')
+    ],
+        cb
+    );
 });

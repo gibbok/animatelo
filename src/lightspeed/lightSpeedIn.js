@@ -1,6 +1,6 @@
-; (function (animatejs) {
+; (function (animate) {
     'use strict';
-    animatejs.lightSpeedIn = function (selector, options) {
+    animate.lightSpeedIn = function (selector, options) {
         var keyframeset = [
             {
                 transform: 'translate3d(100%, 0, 0) skewX(-30deg)',
@@ -22,6 +22,6 @@
                 offset: 1
             }
         ];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

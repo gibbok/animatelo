@@ -1,6 +1,6 @@
-; (function(animatejs) {
+; (function(animate) {
     'use strict';
-    animatejs.swing = function(selector, options) {
+    animate.swing = function(selector, options) {
         var keyframeset = [
             {
                 transform: 'rotate3d(0, 0, 1, 0deg)',
@@ -27,6 +27,6 @@
                 offset: 1
             }
         ];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

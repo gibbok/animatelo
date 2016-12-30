@@ -1,6 +1,6 @@
-; (function (animatejs) {
+; (function (animate) {
     'use strict';
-    animatejs.zoomIn = function (selector, options) {
+    animate.zoomIn = function (selector, options) {
         var keyframeset = [
             {
                 opacity: 0,
@@ -18,6 +18,6 @@
                 offset: 1
             }
         ];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

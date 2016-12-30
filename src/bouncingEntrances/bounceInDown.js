@@ -1,6 +1,6 @@
-; (function(animatejs) {
+; (function(animate) {
     'use strict';
-    animatejs.bounceInDown = function(selector, options) {
+    animate.bounceInDown = function(selector, options) {
         var keyframeset = [
             {
                 opacity: 0,
@@ -31,6 +31,6 @@
                 offset: 1
             }
         ];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

@@ -1,6 +1,6 @@
-; (function (animatejs) {
+; (function (animate) {
     'use strict';
-    animatejs.fadeInUpBig = function (selector, options) {
+    animate.fadeInUpBig = function (selector, options) {
         var keyframeset = [
             {
                 opacity: 0,
@@ -13,6 +13,6 @@
                 offset: 1
             }
         ];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

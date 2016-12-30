@@ -94,7 +94,7 @@
         },
         _animate = function () {
             var parameters = _getCustomParameters();
-            _player = window.animatejs[menuSelection](_targetId, parameters)[0];
+            _player = window.animate[menuSelection](_targetId, parameters)[0];
         };
     init();
 })(window)

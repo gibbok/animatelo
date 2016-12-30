@@ -1,6 +1,6 @@
-; (function (animatejs) {
+; (function (animate) {
     'use strict';
-    animatejs.bounceOutLeft = function (selector, options) {
+    animate.bounceOutLeft = function (selector, options) {
         var keyframeset = [{
             opacity: 1,
             transform: 'none',
@@ -14,6 +14,6 @@
             transform: 'translate3d(-2000px, 0, 0)',
             offset: 1
         }];
-        return animatejs._animate(selector, keyframeset, options);
+        return animate._animate(selector, keyframeset, options);
     }
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});

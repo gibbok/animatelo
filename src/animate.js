@@ -1,4 +1,4 @@
-; (function (animatejs) {
+; (function (animate) {
     'use strict';
     var _defaultOptions = {
         duration: 1000,
@@ -67,7 +67,7 @@
             }
         };
 
-    animatejs._animate = function (selector, keyframes, optionsArg) {
+    animate._animate = function (selector, keyframes, optionsArg) {
         var options = {
             duration: optionsArg && 'duration' in optionsArg ? optionsArg.duration : _defaultOptions.duration,
             delay: optionsArg && 'delay' in optionsArg ? optionsArg.delay : _defaultOptions.delay,
@@ -92,4 +92,4 @@
         return players;
     };
 
-})(window.animatejs = window.animatejs || {});
+})(window.animate = window.animate || {});
