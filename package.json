@@ -1,8 +1,20 @@
 {
   "name": "animate.js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Animate.js is a set of awesome, fun, and cross-browser animations based on Web Animations API for you to use in your projects.",
   "main": "index.js",
+  "keywords": [
+    "web animations api",
+    "web animations",
+    "animation",
+    "animations",
+    "animate",
+    "animatejs",
+    "animate.js",
+    "animate.css",
+    "css",
+    "css3"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +23,14 @@
     "url": "git+https://github.com/gibbok/animate.js.git"
   },
   "dependencies": {
+  },
+  "author": "GibboK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gibbok/animate.js/issues"
+  },
+  "homepage": "https://github.com/gibbok/animate.js#readme",
+  "devDependencies": {
     "connect": "^3.5.0",
     "open": "^0.0.5",
     "jshint-stylish": "^2.2.1",
@@ -23,14 +43,5 @@
     "gulp-uglify": "^2.0.0",
     "pump": "^1.0.2",
     "gulp-concat": "^2.6.1"
-  },
-  "author": "GibboK",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gibbok/animate.js/issues"
-  },
-  "homepage": "https://github.com/gibbok/animate.js#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1"
   }
 }
