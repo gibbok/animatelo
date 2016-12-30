@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-input, select, button, textarea {
+button, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -22,7 +22,8 @@ button, select {
   border-radius: 4px;
 }
 
-button:focus, select:focus {
+button:focus,
+select:focus {
   outline: none;
 }
 
@@ -45,7 +46,7 @@ select {
   border-radius: 4px;
 }
 
-h1, .alpha {
+h1 {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
   font-size: 48px;
@@ -55,16 +56,17 @@ h1, .alpha {
   letter-spacing: -.05em;
 }
 
-h2, .beta {
+h2 {
   margin-bottom: 12px;
   margin-bottom: .75rem;
   font-weight: 400;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1;
+  color: #7b8993;
 }
 
-.site__title {
+#index-target {
   color: #f35626;
   background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
   background-clip: text;
@@ -78,10 +80,6 @@ h2, .beta {
     font-size: 6rem;
     line-height: 1;
   }
-}
-
-.subhead, .meta {
-  color: #7b8993;
 }
 
 p, hr, form {
@@ -121,7 +119,8 @@ html {
   font: 100%/1.5 "Roboto", Verdana, sans-serif;
   color: #3d464d;
   background-color: #fff;
-  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
   width: 100%;
   overflow: hidden-x;
   text-align: center;
@@ -147,7 +146,7 @@ html {
   }
 }
 
-.site__title {
+#index-target {
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
     -webkit-background-clip: text;
