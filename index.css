@@ -1,7 +1,3 @@
-/*-----------------------------------*\
-  $RESET
-\*-----------------------------------*/
-
 *, :before, :after {
   margin: 0;
   padding: 0;
@@ -20,14 +16,9 @@ input, select, button, textarea {
   color: inherit;
 }
 
-/*-----------------------------------*\
-  $OBJECTS
-\*-----------------------------------*/
-
 .butt, .input {
   padding: .75rem;
   margin: .375rem;
-
   background-color: transparent;
   border-radius: 4px;
 }
@@ -41,20 +32,11 @@ input, select, button, textarea {
   line-height: 1.375;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-
   font-weight: 700;
-
   color: #f35626;
-
   cursor: pointer;
   -webkit-animation: hue 60s infinite linear;
 }
-
-  .butt--primary {
-    background-color: #f35626;
-    color: #fff;
-  }
-
 
 .input {
   border: 1px solid #c0c8c9;
@@ -69,13 +51,8 @@ input, select, button, textarea {
     background-position: right center;
   }
 
-/*-----------------------------------*\
-  $TYPOGRAPHY
-\*-----------------------------------*/
-
 h1, .alpha {
   margin-bottom: 1.5rem;
-
   font-size: 3rem;
   font-weight: 100;
   line-height: 1;
@@ -101,9 +78,6 @@ h2, .beta {
   color: #7b8993;
 }
 
-.promo {
-  text-align: center;
-}
 
 p, hr, form {
   margin-bottom: 1.5rem;
@@ -127,27 +101,11 @@ a {
     color: #f35626;
   }
 
-/*-----------------------------------*\
-  $LAYOUT
-\*-----------------------------------*/
-
 header, main {
   padding: 1.5rem;
   max-width: 38rem;
   margin: 0 auto;
 }
-
-.isle {
-  padding: .75rem;
-}
-
-.spit {
-  padding: .375rem;
-}
-
-/*-----------------------------------*\
-  $BASE
-\*-----------------------------------*/
 
 html {
   font: 100%/1.5 "Roboto", Verdana, sans-serif;
@@ -157,8 +115,6 @@ html {
   width: 100%;
 
   overflow: hidden-x;
-
-  /* Centering in The Unknown */
   text-align: center;
 }
 
@@ -181,11 +137,6 @@ html {
     max-width: 38rem;
   }
 }
-
-/*-----------------------------------*\
-  $HEADER
-\*-----------------------------------*/
-
   .site__title {
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
@@ -193,20 +144,6 @@ html {
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 60s infinite linear;
   }
-
-.site__content {
-  -webkit-animation: bounceInUp 1s;
-  -webkit-animation-delay: .1s;
-}
-
-  .site__content form {
-    -webkit-animation: bounceInUp 1s;
-    -webkit-animation-delay: .1s;
-  }
-
-/*-----------------------------------*\
-  $ANIMATIONS
-\*-----------------------------------*/
 
 @-webkit-keyframes hue {
   from {
