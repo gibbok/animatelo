@@ -83,21 +83,44 @@ Animate.js has a straight forward API, simply call:
 
  `window.animate.animation(selector, options);`
 
-Basic usage:
+## Usage
+Animate.js supports any valid CSS Selectors, so an animation can be applied to one element or simultaneously to different elements.
 
 [Try live example](http://codepen.io/gibbok/pen/pRJXQq)
 ```js
 window.animate.flip('#hello');
 ```
-
-Animate.js supports any valid CSS Selectors, so an animation can be applied simultaneously to different elements.
-
 [Try live example](http://codepen.io/gibbok/pen/ggaYgV)
 ```js
 window.animate.flash('p > span');
 ```
 
-It is possible to override the default behaviour for an animation, passing an object with the following optional properties:
+## Options
+It is possible to override the default behaviour for an animation, passing an Object containing one or more timing properties: 
+
+`id - Optional`
+
+A property unique to animate(): a DOMString with which to reference the animation.
+
+`delay - Optional`
+
+The number of milliseconds to delay the start of the animation. Defaults to 0.
+
+`direction - Optional`
+
+Whether the animation runs forwards (normal), backwards (reverse), switches direction after each iteration (alternate), or runs backwards and switches direction after each iteration (alternate-reverse). Defaults to "normal".
+
+`duration - Optional`
+
+The number of milliseconds each iteration of the animation takes to complete. Defaults to 1000. keep in mind that your animation will not run if this value is 0.
+
+`fill - Optional`
+
+Dictates whether the animation's effects should be reflected by the element(s) prior to playing ("backwards"), retained after the animation has completed playing ("forwards"), or both. Defaults to "both".
+
+`iterations - Optional`
+The number of times the animation should repeat. Defaults to 1, and can also take a value of Infinity to make it repeat for as long as the element exists.
+
 
 [Try live example](http://codepen.io/gibbok/pen/vgNBpw)
 ```js
