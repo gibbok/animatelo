@@ -3,10 +3,9 @@
 
 Animate.js is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
-This is a porting to Web Animation API of the fabulous [animate.css](https://github.com/daneden/animate.css).
+This is a porting to Web Animation API of the fabulous [animate.css](https://github.com/daneden/animate.css) project.
 
 # What is Web Animations API?
-
 Web Animations API is a new JavaScript API for driving animated content on the web.
 
 Web Animations unlocks features previously only usable declaratively, and exposes powerful, high-performance animation capabilities to developers.
@@ -27,8 +26,6 @@ The polyfill and Animate.js are supported on modern versions of all major browse
 - Safari (Mac) 9+
 
 # Quick start
-
-
 Here's a simple example of an animation that flip a text in a  `<h1>`.  
 [Try it as a live demo.](http://codepen.io/gibbok/pen/pRJXQq)
 
