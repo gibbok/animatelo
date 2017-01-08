@@ -59,26 +59,8 @@
                 _submitedBy = 'animate';
             }.bind(this));
         },
-        _getCustomParameters = function () {
-            var result = {};
-            for (var i = 0, len = _elmForm.length; i < len; i++) {
-                var item = _elmForm[i];
-                var prop = item.dataset.prop;
-                var value;
-                if (prop) {
-                    if (prop === 'direction' || prop === 'fill') {
-                        value = item.value;
-                    } else {
-                        value = Number(item.value);
-                    }
-                    result[prop] = value;
-                }
-            }
-            return result;
-        },
         _animate = function () {
-            var parameters = _getCustomParameters();
-            _player = window.animate[menuSelection](_targetId, parameters)[0];
+            _player = window.animate[menuSelection](_targetId)[0];
         };
     init();
 })(window)
