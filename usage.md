@@ -135,6 +135,11 @@ var options = {
 window.animate.zoomIn('#headline', options);
 ```
 
+## Players
+
+[Try live example](http://codepen.io/gibbok/pen/jybNRL)
+
+
 
 
 
