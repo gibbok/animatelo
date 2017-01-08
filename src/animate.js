@@ -81,9 +81,10 @@
         },
             hasUserId = optionsArg && 'id' in optionsArg ? true : false,
             nodeList = _select(selector),
-            players = [];
+            players = [],
+            nodeListArr = [].slice.call(nodeList);
         _validate(options);
-        nodeList.forEach(function (node, index) {
+        nodeListArr.forEach(function (node, index) {
             var player = node.animate(keyframes, options);
             if (hasUserId) {
                 player.id = options.id + '-' + index;
