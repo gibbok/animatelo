@@ -37,7 +37,7 @@
             _menuSelection = _elmMenuAnimations.selected.value;
         },
         _getMenuAnimationsSelectedValue = function () {
-            menuSelection = _elmMenuAnimations.selectedOptions[0].value;
+            menuSelection = _elmMenuAnimations.options[_elmMenuAnimations.selectedIndex].value;
         },
         _formListener = function () {
             _elmForm.addEventListener('submit', function (event) {
