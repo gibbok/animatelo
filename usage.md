@@ -136,7 +136,16 @@ window.animate.zoomIn('#headline', options);
 ```
 
 ## Players
+Animate.js returns an Array of Animation Objects, each one represents a single animation player and provides playback controls and a timeline for an animation node or source.
 
+[See the specification for more details.](thub.io/web-animations/#the-animation-interface)
+
+```js
+var players = window.animate.wobble('#headline');
+players[0].onfinish = (function() {
+  console.log('Animation has ended and playState value is: ' + players[0].playState);
+});
+```
 [Try live example](http://codepen.io/gibbok/pen/jybNRL)
 
 
