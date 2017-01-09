@@ -1,6 +1,6 @@
 # How to get started
 ## Dependencies
-To use Animate.js in your project, simply add two JavaScript files from CDN into your document's <head>
+To use Animate.js in your project, simply add two JavaScript files from CDN into your document's `<head>`.
 
 ```html
 <head>
@@ -138,7 +138,7 @@ window.animate.zoomIn('#headline', options);
 ## Players
 Animate.js returns an Array of Animation Objects, each one represents a single animation player and provides playback controls and a timeline for an animation node or source.
 
-[See the specification for more details.](thub.io/web-animations/#the-animation-interface)
+[See the W3C specification for more details.](http://w3c.github.io/web-animations/#the-animation-interface)
 
 ```js
 var players = window.animate.wobble('#headline');
