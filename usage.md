@@ -13,7 +13,7 @@ To use Animate.js in your project, simply add two JavaScript files from CDN into
 ```
 
 ## Supported animations
-Animation.js support the following animations:
+Animation.js supports the following animations:
 
 * `bounce`
 * `flash`
@@ -79,12 +79,12 @@ Animation.js support the following animations:
 
 ## The API
 
-Animate.js has a straight forward API, simply call:
+Animate.js has a straightforward API, simply call:
 
  `window.animate.animation(selector, options);`
 
 ## Usage
-Animate.js supports any valid CSS Selectors, so an animation can be applied to one element or simultaneously to different elements.
+Animate.js supports any valid CSS Selectors or a DOM node, so an animation can be applied to one element or simultaneously to different elements.
 
 [Try live example](http://codepen.io/gibbok/pen/pRJXQq)
 ```js
@@ -149,8 +149,18 @@ players[0].onfinish = (function() {
 [Try live example](http://codepen.io/gibbok/pen/jybNRL)
 
 
-
-
+```js
+var anim1 = window.animate.shake('#headline1', {
+  delay: 500,
+  duration: 1500
+})[0];
+anim1.onfinish = function() {
+  var anim2 = window.animate.wobble('#headline2', {
+    duration: 1500
+  })[0];
+};
+```
+[Try live example](http://codepen.io/gibbok/pen/ZLQBZJ/)
 
 
 

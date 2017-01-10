@@ -23,11 +23,14 @@
             var nodeList,
                 isNodeList = selector instanceof NodeList,
                 isNode = selector instanceof Node,
+                isHTMLCollection = selector instanceof HTMLCollection,
                 isString = typeof selector === 'string';
             if (isNodeList) {
                 nodeList = selector;
             } else if (isNode) {
-                nodeList[selector];
+                nodeList = [selector];
+            } else if(isHTMLCollection){
+                nodeList = selector;
             } else if (isString) {
                 nodeList = document.querySelectorAll(selector)
             } else {
