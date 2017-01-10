@@ -44,3 +44,6 @@ Here's a simple example of an animation that flip a text in a  `<h1>`.
     window.animate.flip('#hello');
 </script>
 ```
+
+# Usage
+Technical documentation can be found at [Usage](./usage.md) page.
