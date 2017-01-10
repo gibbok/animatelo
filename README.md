@@ -46,4 +46,4 @@ Here's a simple example of an animation that flip a text in a  `<h1>`.
 ```
 
 # Usage
-Technical documentation can be found at [Usage](./usage.md) page.
+More information and technical documentation on Animate.js can be found at [Usage](./usage.md) page.
