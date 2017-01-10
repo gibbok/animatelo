@@ -1,5 +1,4 @@
-# How to get started
-## Dependencies
+# Dependencies
 To use Animate.js in your project, simply add two JavaScript files from CDN into your document's `<head>`.
 
 ```html
@@ -12,7 +11,7 @@ To use Animate.js in your project, simply add two JavaScript files from CDN into
 </head>
 ```
 
-## Supported animations
+# Supported animations
 Animation.js supports the following animations:
 
 * `bounce`
@@ -77,13 +76,13 @@ Animation.js supports the following animations:
 * `zoomInLeft`
 * `zoomInRight`
 
-## The API
+# The API
 
 Animate.js has a straightforward API, simply call:
 
  `window.animate.animation(selector, options);`
 
-## Usage
+# Usage
 Animate.js supports any valid CSS Selectors or one or more DOM nodes, so an animation can be applied to one element or simultaneously to different elements.
 
 [Try live example](http://codepen.io/gibbok/pen/pRJXQq)
@@ -101,7 +100,7 @@ window.animate.rollIn(dom);
 ```
 
 
-## Options
+# Options
 It is possible to override the default behaviour for an animation, passing an Object containing one or more timing properties: 
 
 `id` *Optional*`
@@ -141,7 +140,7 @@ var options = {
 window.animate.zoomIn('#headline', options);
 ```
 
-## Players
+# Players
 Animate.js returns an Array of Animation Objects, each one represents a single animation player and provides playback controls and a timeline for an animation node or source.
 
 [See the W3C specification for more details.](http://w3c.github.io/web-animations/#the-animation-interface)
