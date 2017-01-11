@@ -166,3 +166,39 @@ anim1.onfinish = function() {
 };
 ```
 [Try live example](http://codepen.io/gibbok/pen/ZLQBZJ/)
+
+# Extensibility
+Animate.js can be easily extended to support other animations using plugins.
+A plugin is a single JavaScript file which follows the [Namespacing Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailnamespacing) conventions, and should be added into your project document's `<head>` after `animate.min.js` file.
+
+Use the following boilerplate:
+
+```js
+/*
+ Namespacing Patterns with Immediately-invoked Function Expressions
+ This plugin creates a very simple fade-in effect animating the opacity of an element.
+*/
+; (function(animate) {
+    'use strict';
+    // add your plugin name 
+    animate.pluginName = function(selector, options) {
+        // add css properties to be animated
+        var keyframeset = [
+            {
+                opacity: 0,
+                offset: 0   // keyframe 0%
+            }, {
+                opacity: 1,
+                offset: 1   // keyframe 100%
+            }
+        ];
+        return animate._animate(selector, keyframeset, options);
+    }
+})(window.animate = window.animate || {});
+```
+
+# Tools
+Keyframes-tool is a NodeJs command line tool which convert CSS Animations to a keyframes object suitable for Web Animations API.
+Objects returned from Keyframes-tool can be easily added to your Animate.js plugins facilitating moving animations from stylesheets to JavaScript.
+
+Visit [Keyframes-tool](https://github.com/gibbok/keyframes-tool) project.
