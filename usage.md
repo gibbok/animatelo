@@ -206,7 +206,6 @@ and simply call it from your application code, for example:
 window.animate.myAmazingPlugin('#svg', {
   duration: 2000
 });
-});
 ```
 [Try live example](http://codepen.io/gibbok/pen/LxNpjq/)
 
