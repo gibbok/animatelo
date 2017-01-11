@@ -176,7 +176,8 @@ Use the following boilerplate for your plugin:
 ```js
 /*
  Namespacing Patterns with Immediately-invoked Function Expressions.
- This plugin creates a very simple fade-in effect animating the opacity of an element.
+ This plugin creates a very simple fade-in  with a rotation effect animating
+ opacity and transform properties of a DOM element.
 */
 ; (function(animate) {
     'use strict';
@@ -186,9 +187,11 @@ Use the following boilerplate for your plugin:
         var keyframeset = [
             {
                 opacity: 0,
+                transform: 'rotate(-45deg)',
                 offset: 0   // keyframe 0%
             }, {
                 opacity: 1,
+                transform: 'rotate(0deg) scale(1.5)',
                 offset: 1   // keyframe 100%
             }
         ];
@@ -199,11 +202,13 @@ Use the following boilerplate for your plugin:
 and simply call it from your application code, for example:
 
 ```js
-window.myAmazingPlugin('#yourElement', {
+// animate using your plugin!
+window.animate.myAmazingPlugin('#svg', {
   duration: 2000
 });
+});
 ```
-
+[Try live example](http://codepen.io/gibbok/pen/LxNpjq/)
 
 # Tools
 Keyframes-tool is a NodeJs command line tool which convert CSS Animations to a keyframes object suitable for Web Animations API.
