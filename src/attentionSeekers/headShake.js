@@ -1,7 +1,7 @@
 /*! Animate.js | The MIT License (MIT) | Copyright (c) 2017 GibboK */
-; (function(animate) {
+; (function (animate) {
     'use strict';
-    animate.headShake = function(selector, options) {
+    animate.headShake = function (selector, options) {
         var keyframeset = [
             {
                 transform: 'translateX(0)',

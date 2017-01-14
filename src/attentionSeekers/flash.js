@@ -1,21 +1,25 @@
 /*! Animate.js | The MIT License (MIT) | Copyright (c) 2017 GibboK */
-; (function(animate) {
+; (function (animate) {
     'use strict';
-    animate.flash = function(selector, options) {
+    animate.flash = function (selector, options) {
         var keyframeset = [
             {
                 opacity: 1,
                 offset: 0
-            }, {
+            },
+            {
                 opacity: 0,
                 offset: 0.25
-            }, {
+            },
+            {
                 opacity: 1,
                 offset: 0.5
-            }, {
+            },
+            {
                 opacity: 0,
                 offset: 0.75
-            }, {
+            },
+            {
                 opacity: 1,
                 offset: 1
             }

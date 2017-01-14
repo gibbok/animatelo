@@ -1,7 +1,7 @@
 /*! Animate.js | The MIT License (MIT) | Copyright (c) 2017 GibboK */
-; (function(animate) {
+; (function (animate) {
     'use strict';
-    animate.swing = function(selector, options) {
+    animate.swing = function (selector, options) {
         var keyframeset = [
             {
                 transform: 'rotate3d(0, 0, 1, 0deg)',

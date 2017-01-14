@@ -1,7 +1,7 @@
 /*! Animate.js | The MIT License (MIT) | Copyright (c) 2017 GibboK */
-; (function(animate) {
+; (function (animate) {
     'use strict';
-    animate.bounceIn = function(selector, options) {
+    animate.bounceIn = function (selector, options) {
         var keyframeset = [
             {
                 opacity: 0,
