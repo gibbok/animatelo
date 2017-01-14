@@ -44,10 +44,10 @@ Here's a simple example of an animation that flip a text in a  `<h1>`.
 
 ```html
 <!-- Include the polyfill -->
-<script src="https://cdn.rawgit.com/web-animations/web-animations-js/master/web-animations.min.js"></script>
+<script src="https://cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js"></script>
 
 <!-- Include Animate.js -->
-<script src="https://rawgit.com/web-animations/web-animations-js/master/web-animations.min.js"></script>
+<script src="https://cdn.rawgit.com/gibbok/animate.js/1.0.0/dist/animate.min.js"></script>
 
 <!-- Set up a target to animate -->
 <h1 id="hello">Hello world!</h1>

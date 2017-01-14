@@ -4,12 +4,26 @@ To use Animate.js in your project, simply add two JavaScript files from CDN into
 ```html
 <head>
 <!-- Include the polyfill -->
-<script src="https://cdn.rawgit.com/web-animations/web-animations-js/master/web-animations.min.js"></script>
+<script src="https://cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js"></script>
 
 <!-- Include Animate.js -->
-<script src="https://rawgit.com/web-animations/web-animations-js/master/web-animations.min.js"></script>
+<script src="https://cdn.rawgit.com/gibbok/animate.js/1.0.0/dist/animate.min.js"></script>
 </head>
 ```
+
+# Installation via Bower of npm
+To install via Bower, simply do the following:
+
+```bash
+$ bower install animate.js --save
+```
+or you can install via npm:
+
+```bash
+$ npm install animate.js --save
+```
+
+and add a reference of your local `animate.min.js` file into your document's `<head>`.
 
 # Supported animations
 Animation.js supports the following animations:
