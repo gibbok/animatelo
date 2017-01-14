@@ -62,7 +62,7 @@
         },
         _resetPlayer = function(){
             if(_player){
-                _player.cancel();
+                _player = null;
             }       
         },
         _buttonAnimateListener = function () {
@@ -93,6 +93,7 @@
             return result;
         },
         _animate = function () {
+            _resetPlayer();
             var parameters = _getCustomParameters();
             _player = window.animate[menuSelection](_targetId, parameters)[0];
         };
