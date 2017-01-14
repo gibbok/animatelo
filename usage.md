@@ -4,10 +4,10 @@ To use Animate.js in your project, simply add two JavaScript files from CDN into
 ```html
 <head>
 <!-- Include the polyfill -->
-<script src="https://cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js"></script>
+<script src="//cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js"></script>
 
 <!-- Include Animate.js -->
-<script src="https://cdn.rawgit.com/gibbok/animate.js/1.0.0/dist/animate.min.js"></script>
+<script src="//cdn.rawgit.com/gibbok/animate.js/1.0.0/dist/animate.min.js"></script>
 </head>
 ```
 
@@ -99,15 +99,15 @@ Animate.js has a straightforward API, simply call:
 # Usage
 Animate.js supports any valid CSS Selectors or one or more DOM nodes, so an animation can be applied to one element or simultaneously to different elements.
 
-[Try live example](http://codepen.io/gibbok/pen/pRJXQq)
+[Try live example](//codepen.io/gibbok/pen/pRJXQq)
 ```js
 window.animate.flip('#hello');
 ```
-[Try live example](http://codepen.io/gibbok/pen/ggaYgV)
+[Try live example](//codepen.io/gibbok/pen/ggaYgV)
 ```js
 window.animate.flash('p > span');
 ```
-[Try live example](http://codepen.io/gibbok/pen/ZLQKvL)
+[Try live example](//codepen.io/gibbok/pen/ZLQKvL)
 ```js
 var dom = document.getElementById('svg');
 window.animate.rollIn(dom);
@@ -141,7 +141,7 @@ Dictates whether the animation's effects should be reflected by the element(s) p
 The number of times the animation should repeat. Defaults to 1, and can also take a value of Infinity to make it repeat for as long as the element exists.
 
 
-[Try live example](http://codepen.io/gibbok/pen/vgNBpw)
+[Try live example](//codepen.io/gibbok/pen/vgNBpw)
 ```js
 var options = {
   duration: 1500,
@@ -157,7 +157,7 @@ window.animate.zoomIn('#headline', options);
 # Players
 Animate.js returns an Array of Animation Objects, each one represents a single animation player and provides playback controls and a timeline for an animation node or source.
 
-[See the W3C specification for more details.](http://w3c.github.io/web-animations/#the-animation-interface)
+[See the W3C specification for more details.](//w3c.github.io/web-animations/#the-animation-interface)
 
 ```js
 var players = window.animate.wobble('#headline');
@@ -165,7 +165,7 @@ players[0].onfinish = (function() {
   console.log('Animation has ended and playState value is: ' + players[0].playState);
 });
 ```
-[Try live example](http://codepen.io/gibbok/pen/jybNRL)
+[Try live example](//codepen.io/gibbok/pen/jybNRL)
 
 
 ```js
@@ -179,11 +179,11 @@ anim1.onfinish = function() {
   })[0];
 };
 ```
-[Try live example](http://codepen.io/gibbok/pen/ZLQBZJ/)
+[Try live example](//codepen.io/gibbok/pen/ZLQBZJ/)
 
 # Extensibility
 Animate.js can be easily extended to support other animations using plugins.
-A plugin is a single JavaScript file which follows the [Namespacing Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailnamespacing) conventions, and should be added into your project document's `<head>` after `animate.min.js` file.
+A plugin is a single JavaScript file which follows the [Namespacing Patterns](//addyosmani.com/resources/essentialjsdesignpatterns/book/#detailnamespacing) conventions, and should be added into your project document's `<head>` after `animate.min.js` file.
 
 Use the following boilerplate for your plugin:
 
@@ -221,10 +221,10 @@ window.animate.myAmazingPlugin('#svg', {
   duration: 2000
 });
 ```
-[Try live example](http://codepen.io/gibbok/pen/LxNpjq/)
+[Try live example](//codepen.io/gibbok/pen/LxNpjq/)
 
 # Tools
 Keyframes-tool is a NodeJs command line tool which convert CSS Animations to a keyframes object suitable for Web Animations API.
 Objects returned from Keyframes-tool can be easily added to your Animate.js plugins facilitating moving animations from stylesheets to JavaScript.
 
-Visit [Keyframes-tool](https://github.com/gibbok/keyframes-tool) project.
+Visit [Keyframes-tool](//github.com/gibbok/keyframes-tool) project.

@@ -3,9 +3,9 @@
 
 Animate.js is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
-This is a porting to Web Animation API of the fabulous [animate.css](https://github.com/daneden/animate.css) project.
+This is a porting to Web Animation API of the fabulous [animate.css](//github.com/daneden/animate.css) project.
 
-[Check out all the animations here!](https://gibbok.github.io/animate.js)
+[Check out all the animations here!](//gibbok.github.io/animate.js)
 
 # What is Web Animations API?
 Web Animations API is a new JavaScript API for driving animated content on the web.
@@ -18,7 +18,7 @@ With the Web Animations API, we no longer need to rely on DOM-heavy techniques l
 
 # Browser Support
 Web Animations API features is available by default in Firefox 48+ and Chrome 36+.
-For other browsers there’s a [handy maintained polyfill](https://github.com/web-animations/web-animations-js) that tests for feature support and adds it where necessary.
+For other browsers there’s a [handy maintained polyfill](//github.com/web-animations/web-animations-js) that tests for feature support and adds it where necessary.
 
 The polyfill and Animate.js are supported on modern versions of all major browsers, including:
 - Chrome
@@ -42,14 +42,14 @@ $ npm install animate.js --save
 
 # Basic Usage
 Here's a simple example of an animation that flip a text in a  `<h1>`.  
-[Try it as a live demo.](http://codepen.io/gibbok/pen/pRJXQq)
+[Try it as a live demo.](//codepen.io/gibbok/pen/pRJXQq)
 
 ```html
 <!-- Include the polyfill -->
-<script src="https://cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js"></script>
+<script src="//cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js"></script>
 
 <!-- Include Animate.js -->
-<script src="https://cdn.rawgit.com/gibbok/animate.js/1.0.0/dist/animate.min.js"></script>
+<script src="//cdn.rawgit.com/gibbok/animate.js/1.0.0/dist/animate.min.js"></script>
 
 <!-- Set up a target to animate -->
 <h1 id="hello">Hello world!</h1>
@@ -64,4 +64,4 @@ Here's a simple example of an animation that flip a text in a  `<h1>`.
 More information and technical documentation on Animate.js can be found at [Usage](./usage.md) page.
 
 # License
-Animate.js is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Animate.js is licensed under the [MIT license](//opensource.org/licenses/MIT).
