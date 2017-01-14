@@ -51,7 +51,7 @@
         },
         _resetPlayer = function () {
             if (_player) {
-                _player.cancel();
+                _player = null;
             }
         },
         _buttonAnimateListener = function () {
