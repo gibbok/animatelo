@@ -25,7 +25,20 @@ The polyfill and Animate.js are supported on modern versions of all major browse
 - Safari (iOS) 7.1+
 - Safari (Mac) 9+
 
-# Quick start
+# Installation
+
+To install via Bower, simply do the following:
+
+```bash
+$ bower install animate.js --save
+```
+or you can install via npm:
+
+```bash
+$ npm install animate.js --save
+```
+
+# Basic Usage
 Here's a simple example of an animation that flip a text in a  `<h1>`.  
 [Try it as a live demo.](http://codepen.io/gibbok/pen/pRJXQq)
 
@@ -45,5 +58,8 @@ Here's a simple example of an animation that flip a text in a  `<h1>`.
 </script>
 ```
 
-# Usage
+# Advanced Usage Documentation
 More information and technical documentation on Animate.js can be found at [Usage](./usage.md) page.
+
+# License
+Animate.js is licensed under the [MIT license](http://opensource.org/licenses/MIT).
