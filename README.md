@@ -5,6 +5,8 @@ Animate.js is a bunch of cool, fun, and cross-browser animations for you to use 
 
 This is a porting to Web Animation API of the fabulous [animate.css](https://github.com/daneden/animate.css) project.
 
+[Check out all the animations here!](https://gibbok.github.io/animate.js)
+
 # What is Web Animations API?
 Web Animations API is a new JavaScript API for driving animated content on the web.
 
