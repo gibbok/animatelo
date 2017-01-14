@@ -1,39 +1,38 @@
 html {
   font: 100%/1.5 "Roboto", Verdana, sans-serif;
-  width: 100%;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 #test-target {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-left: -180px;
+  margin-left: -11.25rem;
   font-size: 80px;
   font-size: 5rem;
   font-weight: 100;
-  display: block;
-  margin: auto;
-  width: 400px;
-  width: 25rem;
-  height: 320px;
-  height: 20rem;
-  text-align: center;
-  line-height: 320px;
-  line-height: 20rem;
 }
 
 #test-form {
+  position: absolute;
+  top: 30%;
+  left: 50%;
   text-align: center;
-  display: block;
-  margin: auto;
+  margin-left: -80px;
+  margin-left: -5rem;
   width: 160px;
   width: 10rem;
 }
 
 #test-form div{
+  margin-bottom: 12px;
   margin-bottom: 0.75rem;
 }
 
 #test-form label, #test-form button, #test-form input, #test-form select{
   width: 160px;
+  width: 160px;
   width: 10rem;
-  display: block;
 }
