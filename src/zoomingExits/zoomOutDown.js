@@ -6,13 +6,12 @@
             {
                 opacity: 1,
                 transform: 'none',
-                transformOrigin: 'center bottom',
+                transformOrigin: 'center center',
                 offset: 0
             },
             {
                 opacity: 1,
                 transform: 'scale3d(.475, .475, .475) translate3d(0, -60px, 0)',
-                transformOrigin: 'center bottom',
                 animationTimingFunction: 'cubic-bezier(0.550, 0.055, 0.675, 0.190)',
                 offset: 0.4
             },
