@@ -1,7 +1,7 @@
 /*! Animatelo | The MIT License (MIT) | Copyright (c) 2017 GibboK */
 ; (function (animatelo) {
     'use strict';
-    animatelo.version = '1.0.0';
+    animatelo.version = '1.0.1';
 
     var _defaultOptions = {
         duration: 1000,
