@@ -33,6 +33,7 @@
   "devDependencies": {
     "connect": "^3.5.0",
     "open": "^0.0.5",
+    "jshint":"^2.9.4",
     "jshint-stylish": "^2.2.1",
     "jscs": "^3.0.7",
     "gulp": "^3.9.1",
