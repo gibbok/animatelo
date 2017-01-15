@@ -1,6 +1,6 @@
 {
-  "name": "animate.js",
-  "description": "Animate.js is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.",
+  "name": "animatelo",
+  "description": "Animatelo is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.",
   "main": "index.js",
   "moduleType": [
     "globals"
@@ -11,15 +11,15 @@
     "animation",
     "animations",
     "animate",
-    "animatejs",
-    "animate.js",
+    "animatelo",
+    "animatelo.js",
     "animate.css",
     "css",
     "css3"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gibbok/animate.js.git"
+    "url": "git+https://github.com/gibbok/animatelo.git"
   },
   "dependencies": {},
   "author": "GibboK",

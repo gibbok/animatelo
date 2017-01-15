@@ -1,13 +1,13 @@
 # Dependencies
-To use Animate.js in your project, simply add two JavaScript files from CDN into your document's `<head>`.
+To use Animatelo in your project, simply add two JavaScript files from CDN into your document's `<head>`.
 
 ```html
 <head>
 <!-- Include the polyfill -->
 <script src="//cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js"></script>
 
-<!-- Include Animate.js -->
-<script src="//cdn.rawgit.com/gibbok/animate.js/1.0.0/dist/animate.min.js"></script>
+<!-- Include Animatelo -->
+<script src="//cdn.rawgit.com/gibbok/animatelo/1.0.0/dist/animatelo.min.js"></script>
 </head>
 ```
 
@@ -15,18 +15,18 @@ To use Animate.js in your project, simply add two JavaScript files from CDN into
 To install via Bower, simply do the following:
 
 ```bash
-$ bower install animate.js --save
+$ bower install animatelo --save
 ```
 or you can install via npm:
 
 ```bash
-$ npm install animate.js --save
+$ npm install animatelo --save
 ```
 
-and add a reference of your local `animate.min.js` file into your document's `<head>`.
+and add a reference of your local `animatelo.min.js` file into your document's `<head>`.
 
 # Supported animations
-Animation.js supports the following animations:
+Animatelo supports the following animations:
 
 * `bounce`
 * `flash`
@@ -92,25 +92,25 @@ Animation.js supports the following animations:
 
 # The API
 
-Animate.js has a straightforward API, simply call:
+Animatelo has a straightforward API, simply call:
 
- `window.animate.animation(selector, options);`
+ `window.animatelo.animation(selector, options);`
 
 # Usage
-Animate.js supports any valid CSS Selectors or one or more DOM nodes, so an animation can be applied to one element or simultaneously to different elements.
+Animatelo supports any valid CSS Selectors or one or more DOM nodes, so an animation can be applied to one element or simultaneously to different elements.
 
 [Try live example](//codepen.io/gibbok/pen/pRJXQq)
 ```js
-window.animate.flip('#hello');
+window.animatelo.flip('#hello');
 ```
 [Try live example](//codepen.io/gibbok/pen/ggaYgV)
 ```js
-window.animate.flash('p > span');
+window.animatelo.flash('p > span');
 ```
 [Try live example](//codepen.io/gibbok/pen/ZLQKvL)
 ```js
 var dom = document.getElementById('svg');
-window.animate.rollIn(dom);
+window.animatelo.rollIn(dom);
 ```
 
 
@@ -151,16 +151,16 @@ var options = {
   fill: 'both',
   id: 'myAnimation'
 };
-window.animate.zoomIn('#headline', options);
+window.animatelo.zoomIn('#headline', options);
 ```
 
 # Players
-Animate.js returns an Array of Animation Objects, each one represents a single animation player and provides playback controls and a timeline for an animation node or source.
+Animatelo returns an Array of Animation Objects, each one represents a single animation player and provides playback controls and a timeline for an animation node or source.
 
 [See the W3C specification for more details.](//w3c.github.io/web-animations/#the-animation-interface)
 
 ```js
-var players = window.animate.wobble('#headline');
+var players = window.animatelo.wobble('#headline');
 players[0].onfinish = (function() {
   console.log('Animation has ended and playState value is: ' + players[0].playState);
 });
@@ -169,12 +169,12 @@ players[0].onfinish = (function() {
 
 
 ```js
-var anim1 = window.animate.shake('#headline1', {
+var anim1 = window.animatelo.shake('#headline1', {
   delay: 500,
   duration: 1500
 })[0];
 anim1.onfinish = function() {
-  var anim2 = window.animate.wobble('#headline2', {
+  var anim2 = window.animatelo.wobble('#headline2', {
     duration: 1500
   })[0];
 };
@@ -182,8 +182,8 @@ anim1.onfinish = function() {
 [Try live example](//codepen.io/gibbok/pen/ZLQBZJ/)
 
 # Extensibility
-Animate.js can be easily extended to support other animations using plugins.
-A plugin is a single JavaScript file which follows the [Namespacing Patterns](//addyosmani.com/resources/essentialjsdesignpatterns/book/#detailnamespacing) conventions, and should be added into your project document's `<head>` after `animate.min.js` file.
+Animatelo can be easily extended to support other animations using plugins.
+A plugin is a single JavaScript file which follows the [Namespacing Patterns](//addyosmani.com/resources/essentialjsdesignpatterns/book/#detailnamespacing) conventions, and should be added into your project document's `<head>` after `animatelo.min.js` file.
 
 Use the following boilerplate for your plugin:
 
@@ -193,10 +193,10 @@ Use the following boilerplate for your plugin:
  This plugin creates a very simple fade-in  with a rotation effect animating
  opacity and transform properties of a DOM element.
 */
-; (function(animate) {
+; (function(animatelo) {
     'use strict';
     // add your plugin name 
-    animate.myAmazingPlugin = function(selector, options) {
+    animatelo.myAmazingPlugin = function(selector, options) {
         // add css properties to be animated
         var keyframeset = [
             {
@@ -211,13 +211,13 @@ Use the following boilerplate for your plugin:
         ];
         return animate._animate(selector, keyframeset, options);
     }
-})(window.animate = window.animate || {});
+})(window.animatelo = window.animatelo || {});
 ```
 and simply call it from your application code, for example:
 
 ```js
 // animate using your plugin!
-window.animate.myAmazingPlugin('#svg', {
+window.animatelo.myAmazingPlugin('#svg', {
   duration: 2000
 });
 ```
@@ -225,6 +225,6 @@ window.animate.myAmazingPlugin('#svg', {
 
 # Tools
 Keyframes-tool is a NodeJs command line tool which convert CSS Animations to a keyframes object suitable for Web Animations API.
-Objects returned from Keyframes-tool can be easily added to your Animate.js plugins facilitating moving animations from stylesheets to JavaScript.
+Objects returned from Keyframes-tool can be easily added to your Animatelo plugins facilitating moving animations from stylesheets to JavaScript.
 
 Visit [Keyframes-tool](//github.com/gibbok/keyframes-tool) project.

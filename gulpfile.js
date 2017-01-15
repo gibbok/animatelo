@@ -34,7 +34,7 @@ gulp.task('checkcode', function () {
 gulp.task('build', function (cb) {
     pump([
         gulp.src('./src/**/*.js'),
-        concat('animate.min.js'),
+        concat('animatelo.min.js'),
         uglify({
             preserveComments: 'license'
         }),

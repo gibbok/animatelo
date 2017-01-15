@@ -1,7 +1,7 @@
-/*! Animate.js | The MIT License (MIT) | Copyright (c) 2017 GibboK */
-; (function (animate) {
+/*! Animatelo | The MIT License (MIT) | Copyright (c) 2017 GibboK */
+; (function (animatelo) {
     'use strict';
-    animate.flip = function (selector, options) {
+    animatelo.flip = function (selector, options) {
         var keyframeset = [
             {
                 transform: 'perspective(400px) rotate3d(0, 1, 0, -360deg)',
@@ -29,6 +29,6 @@
                 offset: 1
             }
         ];
-        return animate._animate(selector, keyframeset, options);
+        return animatelo._animate(selector, keyframeset, options);
     }
-})(window.animate = window.animate || {});
+})(window.animatelo = window.animatelo || {});

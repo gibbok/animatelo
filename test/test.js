@@ -96,7 +96,7 @@
         _animate = function () {
             _resetPlayer();
             var parameters = _getCustomParameters();
-            _player = window.animate[menuSelection](_targetId, parameters)[0];
+            _player = window.animatelo[menuSelection](_targetId, parameters)[0];
         };
     init();
 })(window)

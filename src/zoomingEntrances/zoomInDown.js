@@ -1,7 +1,7 @@
-/*! Animate.js | The MIT License (MIT) | Copyright (c) 2017 GibboK */
-; (function (animate) {
+/*! Animatelo | The MIT License (MIT) | Copyright (c) 2017 GibboK */
+; (function (animatelo) {
     'use strict';
-    animate.zoomInDown = function (selector, options) {
+    animatelo.zoomInDown = function (selector, options) {
         var keyframeset = [
             {
                 opacity: 0,
@@ -21,6 +21,6 @@
                 offset: 1
             }
         ];
-        return animate._animate(selector, keyframeset, options);
+        return animatelo._animate(selector, keyframeset, options);
     }
-})(window.animate = window.animate || {});
+})(window.animatelo = window.animatelo || {});

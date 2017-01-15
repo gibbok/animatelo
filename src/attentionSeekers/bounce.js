@@ -1,7 +1,7 @@
-/*! Animate.js | The MIT License (MIT) | Copyright (c) 2017 GibboK */
-; (function (animate) {
+/*! Animatelo | The MIT License (MIT) | Copyright (c) 2017 GibboK */
+; (function (animatelo) {
     'use strict';
-    animate.bounce = function (selector, options) {
+    animatelo.bounce = function (selector, options) {
         var keyframeset = [
             {
                 animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
@@ -48,6 +48,6 @@
                 offset: 1
             }
         ];
-        return animate._animate(selector, keyframeset, options);
+        return animatelo._animate(selector, keyframeset, options);
     }
-})(window.animate = window.animate || {});
+})(window.animatelo = window.animatelo || {});

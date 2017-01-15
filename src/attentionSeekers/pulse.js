@@ -1,7 +1,7 @@
-/*! Animate.js | The MIT License (MIT) | Copyright (c) 2017 GibboK */
-; (function (animate) {
+/*! Animatelo | The MIT License (MIT) | Copyright (c) 2017 GibboK */
+; (function (animatelo) {
     'use strict';
-    animate.pulse = function (selector, options) {
+    animatelo.pulse = function (selector, options) {
         var keyframeset = [
             {
                 transform: 'scale3d(1, 1, 1)',
@@ -16,6 +16,6 @@
                 offset: 1
             }
         ];
-        return animate._animate(selector, keyframeset, options);
+        return animatelo._animate(selector, keyframeset, options);
     }
-})(window.animate = window.animate || {});
+})(window.animatelo = window.animatelo || {});

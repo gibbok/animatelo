@@ -1,7 +1,7 @@
-/*! Animate.js | The MIT License (MIT) | Copyright (c) 2017 GibboK */
-; (function (animate) {
+/*! Animatelo | The MIT License (MIT) | Copyright (c) 2017 GibboK */
+; (function (animatelo) {
     'use strict';
-    animate.version = '1.0.0';
+    animatelo.version = '1.0.0';
 
     var _defaultOptions = {
         duration: 1000,
@@ -73,7 +73,7 @@
             }
         };
 
-    animate._animate = function (selector, keyframes, optionsArg) {
+    animatelo._animate = function (selector, keyframes, optionsArg) {
         var options = {
             duration: optionsArg && 'duration' in optionsArg ? optionsArg.duration : _defaultOptions.duration,
             delay: optionsArg && 'delay' in optionsArg ? optionsArg.delay : _defaultOptions.delay,
@@ -88,7 +88,7 @@
             nodeListArr = [].slice.call(nodeList);
         _validate(options);
         nodeListArr.forEach(function (node, index) {
-            var player = node.animate(keyframes, options);
+            var player = node.animatelo(keyframes, options);
             if (hasUserId) {
                 player.id = options.id + '-' + index;
             } else {
@@ -99,4 +99,4 @@
         return players;
     };
 
-})(window.animate = window.animate || {});
+})(window.animatelo = window.animatelo || {});
