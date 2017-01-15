@@ -88,7 +88,7 @@
             nodeListArr = [].slice.call(nodeList);
         _validate(options);
         nodeListArr.forEach(function (node, index) {
-            var player = node.animatelo(keyframes, options);
+            var player = node.animate(keyframes, options);
             if (hasUserId) {
                 player.id = options.id + '-' + index;
             } else {
