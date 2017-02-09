@@ -209,7 +209,7 @@ Use the following boilerplate for your plugin:
                 offset: 1   // keyframe 100%
             }
         ];
-        return animate._animate(selector, keyframeset, options);
+        return animatelo._animate(selector, keyframeset, options);
     }
 })(window.animatelo = window.animatelo || {});
 ```
