@@ -61,7 +61,7 @@
             }.bind(this));
         },
         _animate = function () {
-            _player = window.animate[menuSelection](_targetId)[0];
+            _player = window.animatelo[menuSelection](_targetId)[0];
         };
     init();
 })(window)
