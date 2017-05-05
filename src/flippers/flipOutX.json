@@ -1,0 +1,1 @@
+{"flipOutX":[{"transform":"perspective(400px)","offset":"0","easing":"ease"},{"transform":"perspective(400px) rotate3d(1, 0, 0, -20deg)","opacity":"1","offset":"0.3","easing":"ease"},{"transform":"perspective(400px) rotate3d(1, 0, 0, 90deg)","opacity":"0","offset":"1","easing":"ease"}]}
