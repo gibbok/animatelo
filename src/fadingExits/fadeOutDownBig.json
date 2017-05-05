@@ -1,1 +1,15 @@
-{"fadeOutDownBig":[{"opacity":"1","offset":"0","easing":"ease"},{"opacity":"0","transform":"translate3d(0, 2000px, 0)","offset":"1","easing":"ease"}]}
+{
+    "fadeOutDownBig": [
+        {
+            "opacity": "1",
+            "offset": "0",
+            "easing": "ease"
+        },
+        {
+            "opacity": "0",
+            "transform": "translate3d(0, 2000px, 0)",
+            "offset": "1",
+            "easing": "ease"
+        }
+    ]
+}

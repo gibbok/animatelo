@@ -1,1 +1,31 @@
-{"flipInX":[{"transform":"perspective(400px) rotate3d(1, 0, 0, 90deg)","opacity":"0","offset":"0","easing":"ease-in"},{"transform":"perspective(400px) rotate3d(1, 0, 0, -20deg)","offset":"0.4","easing":"ease-in"},{"transform":"perspective(400px) rotate3d(1, 0, 0, 10deg)","opacity":"1","offset":"0.6","easing":"ease"},{"transform":"perspective(400px) rotate3d(1, 0, 0, -5deg)","offset":"0.8","easing":"ease"},{"transform":"perspective(400px)","offset":"1","easing":"ease"}]}
+{
+    "flipInX": [
+        {
+            "transform": "perspective(400px) rotate3d(1, 0, 0, 90deg)",
+            "opacity": "0",
+            "offset": "0",
+            "easing": "ease-in"
+        },
+        {
+            "transform": "perspective(400px) rotate3d(1, 0, 0, -20deg)",
+            "offset": "0.4",
+            "easing": "ease-in"
+        },
+        {
+            "transform": "perspective(400px) rotate3d(1, 0, 0, 10deg)",
+            "opacity": "1",
+            "offset": "0.6",
+            "easing": "ease"
+        },
+        {
+            "transform": "perspective(400px) rotate3d(1, 0, 0, -5deg)",
+            "offset": "0.8",
+            "easing": "ease"
+        },
+        {
+            "transform": "perspective(400px)",
+            "offset": "1",
+            "easing": "ease"
+        }
+    ]
+}

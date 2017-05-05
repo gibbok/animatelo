@@ -1,1 +1,15 @@
-{"slideOutUp":[{"transform":"translate3d(0, 0, 0)","offset":"0","easing":"ease"},{"visibility":"hidden","transform":"translate3d(0, -100%, 0)","offset":"1","easing":"ease"}]}
+{
+    "slideOutUp": [
+        {
+            "transform": "translate3d(0, 0, 0)",
+            "offset": "0",
+            "easing": "ease"
+        },
+        {
+            "visibility": "hidden",
+            "transform": "translate3d(0, -100%, 0)",
+            "offset": "1",
+            "easing": "ease"
+        }
+    ]
+}

@@ -1,1 +1,27 @@
-{"bounceOut":[{"transform":"scale3d(.9, .9, .9)","offset":"0.2","easing":"ease"},{"opacity":"1","transform":"scale3d(1.1, 1.1, 1.1)","offset":"0.5","easing":"ease"},{"opacity":"1","transform":"scale3d(1.1, 1.1, 1.1)","offset":"0.55","easing":"ease"},{"opacity":"0","transform":"scale3d(.3, .3, .3)","offset":"1","easing":"ease"}]}
+{
+    "bounceOut": [
+        {
+            "transform": "scale3d(.9, .9, .9)",
+            "offset": "0.2",
+            "easing": "ease"
+        },
+        {
+            "opacity": "1",
+            "transform": "scale3d(1.1, 1.1, 1.1)",
+            "offset": "0.5",
+            "easing": "ease"
+        },
+        {
+            "opacity": "1",
+            "transform": "scale3d(1.1, 1.1, 1.1)",
+            "offset": "0.55",
+            "easing": "ease"
+        },
+        {
+            "opacity": "0",
+            "transform": "scale3d(.3, .3, .3)",
+            "offset": "1",
+            "easing": "ease"
+        }
+    ]
+}
