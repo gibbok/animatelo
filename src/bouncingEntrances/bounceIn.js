@@ -4,37 +4,61 @@
     animatelo.bounceIn = function (selector, options) {
         var keyframeset = [
             {
-                opacity: 0,
-                transform: 'scale3d(.3, .3, .3)',
-                animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
-                offset: 0
+                "opacity": "0",
+                "transform": "scale3d(.3, .3, .3)",
+                "offset": "0",
+                "easing": "ease"
             },
             {
-                transform: 'scale3d(1.1, 1.1, 1.1)',
-                animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
-                offset: 0.2
+                "offset": "0",
+                "easing": "cubic-bezier(0.215, 0.610, 0.355, 1.000)"
             },
             {
-                transform: 'scale3d(.9, .9, .9)',
-                animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
-                offset: 0.4
+                "offset": "0.2",
+                "easing": "cubic-bezier(0.215, 0.610, 0.355, 1.000)"
             },
             {
-                opacity: 1,
-                transform: 'scale3d(1.03, 1.03, 1.03)',
-                animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
-                offset: 0.6
+                "transform": "scale3d(1.1, 1.1, 1.1)",
+                "offset": "0.2",
+                "easing": "ease"
             },
             {
-                transform: 'scale3d(.97, .97, .97)',
-                animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
-                offset: 0.8
+                "offset": "0.4",
+                "easing": "cubic-bezier(0.215, 0.610, 0.355, 1.000)"
             },
             {
-                opacity: 1,
-                transform: 'scale3d(1, 1, 1)',
-                animationTimingFunction: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
-                offset: 1
+                "transform": "scale3d(.9, .9, .9)",
+                "offset": "0.4",
+                "easing": "ease"
+            },
+            {
+                "offset": "0.6",
+                "easing": "cubic-bezier(0.215, 0.610, 0.355, 1.000)"
+            },
+            {
+                "opacity": "1",
+                "transform": "scale3d(1.03, 1.03, 1.03)",
+                "offset": "0.6",
+                "easing": "ease"
+            },
+            {
+                "offset": "0.8",
+                "easing": "cubic-bezier(0.215, 0.610, 0.355, 1.000)"
+            },
+            {
+                "transform": "scale3d(.97, .97, .97)",
+                "offset": "0.8",
+                "easing": "ease"
+            },
+            {
+                "offset": "1",
+                "easing": "cubic-bezier(0.215, 0.610, 0.355, 1.000)"
+            },
+            {
+                "opacity": "1",
+                "transform": "scale3d(1, 1, 1)",
+                "offset": "1",
+                "easing": "ease"
             }
         ];
         return animatelo._animate(selector, keyframeset, options);
