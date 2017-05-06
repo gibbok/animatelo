@@ -33,6 +33,16 @@
                 "easing": "ease"
             }
         ];
+        // change default animation duration
+        var duration = 750;
+        if (typeof options === 'object' && 'duration' in options === false) {
+            options.duration = duration;
+        }
+        if (typeof options !== 'object') {
+            var options = {
+                duration: duration
+            };
+        }
         return animatelo._animate(selector, keyframeset, options);
     }
 })(window.animatelo = window.animatelo || {});
