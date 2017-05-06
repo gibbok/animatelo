@@ -1,4 +1,4 @@
 - add in github page entry in menu for headShake and jackInTheBox
 
-
-zoomOutRight	no good
+to fix
+lightspeed
