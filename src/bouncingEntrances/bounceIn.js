@@ -37,6 +37,7 @@
                 "easing": "cubic-bezier(0.215, 0.610, 0.355, 1.000)"
             }
         ];
+        // change default animation duration
         var duration = 750;
         if (typeof options === 'object' && 'duration' in options === false) {
             options.duration = duration;
