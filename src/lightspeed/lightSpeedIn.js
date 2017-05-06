@@ -7,25 +7,25 @@
                 "transform": "translate3d(100%, 0, 0) skewX(-30deg)",
                 "opacity": "0",
                 "offset": "0",
-                "easing": "ease"
+                "easing": "ease-out"
             },
             {
                 "transform": "skewX(20deg)",
                 "opacity": "1",
                 "offset": "0.6",
-                "easing": "ease"
+                "easing": "ease-out"
             },
             {
                 "transform": "skewX(-5deg)",
                 "opacity": "1",
                 "offset": "0.8",
-                "easing": "ease"
+                "easing": "ease-out"
             },
             {
                 "transform": "none",
                 "opacity": "1",
                 "offset": "1",
-                "easing": "ease"
+                "easing": "ease-out"
             }
         ];
         return animatelo._animate(selector, keyframeset, options);
