@@ -1,7 +1,7 @@
 - add in github page entry in menu for headShake and jackInTheBox
 
 - verification easing
-bounceIn		no good
+bounceIn		no good ***
 bounceInDown	no good
 bounceInLeft	no good
 bounceInRight	no good
