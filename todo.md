@@ -1,3 +1,2 @@
 - revise animation jackInTheBox
 - add in github page entry in menu for headShake
-- continue from next to bouncingExits
