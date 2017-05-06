@@ -4,23 +4,28 @@
     animatelo.lightSpeedIn = function (selector, options) {
         var keyframeset = [
             {
-                transform: 'translate3d(100%, 0, 0) skewX(-30deg)',
-                opacity: 0,
-                offset: 0
+                "transform": "translate3d(100%, 0, 0) skewX(-30deg)",
+                "opacity": "0",
+                "offset": "0",
+                "easing": "ease"
             },
             {
-                transform: 'skewX(20deg)',
-                opacity: 1,
-                offset: 0.6
+                "transform": "skewX(20deg)",
+                "opacity": "1",
+                "offset": "0.6",
+                "easing": "ease"
             },
             {
-                transform: 'skewX(-5deg)',
-                offset: 0.8
+                "transform": "skewX(-5deg)",
+                "opacity": "1",
+                "offset": "0.8",
+                "easing": "ease"
             },
             {
-                transform: 'none',
-                opacity: 1,
-                offset: 1
+                "transform": "none",
+                "opacity": "1",
+                "offset": "1",
+                "easing": "ease"
             }
         ];
         return animatelo._animate(selector, keyframeset, options);
