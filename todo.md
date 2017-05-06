@@ -1,12 +1,5 @@
 - add in github page entry in menu for headShake and jackInTheBox
 
-- verification easing
-bounceOut		no good
-bounceOutDown	good
-bounceOutLeft	good
-bounceOutRight  good
-bounceOutUp		good
-
 flipOutX		no good
 flipOutY		no good
 
