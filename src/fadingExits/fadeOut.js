@@ -4,12 +4,14 @@
     animatelo.fadeOut = function (selector, options) {
         var keyframeset = [
             {
-                opacity: 1,
-                offset: 0
+                "opacity": "1",
+                "offset": "0",
+                "easing": "ease"
             },
             {
-                opacity: 0,
-                offset: 1
+                "opacity": "0",
+                "offset": "1",
+                "easing": "ease"
             }
         ];
         return animatelo._animate(selector, keyframeset, options);

@@ -4,14 +4,16 @@
     animatelo.fadeOutLeft = function (selector, options) {
         var keyframeset = [
             {
-                opacity: 1,
-                transform: 'none',
-                offset: 0
+                "opacity": "1",
+                "transform": "none",
+                "offset": "0",
+                "easing": "ease"
             },
             {
-                opacity: 0,
-                transform: 'translate3d(-100%, 0, 0)',
-                offset: 1
+                "opacity": "0",
+                "transform": "translate3d(-100%, 0, 0)",
+                "offset": "1",
+                "easing": "ease"
             }
         ];
         return animatelo._animate(selector, keyframeset, options);
