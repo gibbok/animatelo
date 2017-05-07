@@ -51,7 +51,7 @@ Here's a simple example of an animation that flip a text in a  `<h1>`.
 <script src="//cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js"></script>
 
 <!-- Include Animatelo -->
-<script src="//cdn.rawgit.com/gibbok/animatelo/1.0.2/dist/animatelo.min.js"></script>
+<script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
 
 <!-- Set up a target to animate -->
 <h1 id="hello">Hello world!</h1>

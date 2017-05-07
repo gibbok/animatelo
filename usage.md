@@ -7,7 +7,7 @@ To use Animatelo in your project, simply add two JavaScript files from CDN into 
 <script src="//cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js"></script>
 
 <!-- Include Animatelo -->
-<script src="//cdn.rawgit.com/gibbok/animatelo/1.0.2/dist/animatelo.min.js"></script>
+<script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
 </head>
 ```
 
