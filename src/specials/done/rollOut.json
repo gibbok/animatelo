@@ -1,0 +1,15 @@
+{
+    "rollOut": [
+        {
+            "opacity": "1",
+            "offset": "0",
+            "easing": "ease"
+        },
+        {
+            "opacity": "0",
+            "transform": "translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)",
+            "offset": "1",
+            "easing": "ease"
+        }
+    ]
+}

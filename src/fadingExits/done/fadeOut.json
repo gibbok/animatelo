@@ -1,0 +1,14 @@
+{
+    "fadeOut": [
+        {
+            "opacity": "1",
+            "offset": "0",
+            "easing": "ease"
+        },
+        {
+            "opacity": "0",
+            "offset": "1",
+            "easing": "ease"
+        }
+    ]
+}

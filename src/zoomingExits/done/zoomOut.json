@@ -1,0 +1,20 @@
+{
+    "zoomOut": [
+        {
+            "opacity": "1",
+            "offset": "0",
+            "easing": "ease"
+        },
+        {
+            "opacity": "0",
+            "transform": "scale3d(.3, .3, .3)",
+            "offset": "0.5",
+            "easing": "ease"
+        },
+        {
+            "opacity": "0",
+            "offset": "1",
+            "easing": "ease"
+        }
+    ]
+}

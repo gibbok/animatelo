@@ -4,24 +4,29 @@
     animatelo.flash = function (selector, options) {
         var keyframeset = [
             {
-                opacity: 1,
-                offset: 0
+                "opacity": "1",
+                "offset": "0",
+                "easing": "ease"
             },
             {
-                opacity: 0,
-                offset: 0.25
+                "opacity": "0",
+                "offset": "0.25",
+                "easing": "ease"
             },
             {
-                opacity: 1,
-                offset: 0.5
+                "opacity": "1",
+                "offset": "0.5",
+                "easing": "ease"
             },
             {
-                opacity: 0,
-                offset: 0.75
+                "opacity": "0",
+                "offset": "0.75",
+                "easing": "ease"
             },
             {
-                opacity: 1,
-                offset: 1
+                "opacity": "1",
+                "offset": "1",
+                "easing": "ease"
             }
         ];
         return animatelo._animate(selector, keyframeset, options);

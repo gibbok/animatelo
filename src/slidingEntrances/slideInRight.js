@@ -4,14 +4,16 @@
     animatelo.slideInRight = function (selector, options) {
         var keyframeset = [
             {
-                transform: 'translate3d(100%, 0, 0)',
-                visibility: 'visible',
-                offset: 0
+                "transform": "translate3d(100%, 0, 0)",
+                "visibility": "visible",
+                "offset": "0",
+                "easing": "ease"
             },
             {
-                transform: 'translate3d(0, 0, 0)',
-                visibility: 'visible',
-                offset: 1
+                "transform": "translate3d(0, 0, 0)",
+                "visibility": "visible",
+                "offset": "1",
+                "easing": "ease"
             }
         ];
         return animatelo._animate(selector, keyframeset, options);

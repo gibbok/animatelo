@@ -1,0 +1,17 @@
+{
+    "rotateOutUpLeft": [
+        {
+            "transformOrigin": "left bottom",
+            "opacity": "1",
+            "offset": "0",
+            "easing": "ease"
+        },
+        {
+            "transformOrigin": "left bottom",
+            "transform": "rotate3d(0, 0, 1, -45deg)",
+            "opacity": "0",
+            "offset": "1",
+            "easing": "ease"
+        }
+    ]
+}
