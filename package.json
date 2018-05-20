@@ -2,8 +2,8 @@
   "name": "animatelo",
   "version": "1.0.3",
   "description": "Animatelo is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.",
-  "main": "dist/animatelo.min.js",
-  "src": "src/animatelo.js",
+  "main": "./dist/animatelo.min.js",
+  "src": "./src/animatelo.js",
   "keywords": [
     "web animations api",
     "web animations",
