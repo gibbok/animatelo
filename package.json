@@ -18,12 +18,13 @@
     "type": "git",
     "url": "git+https://github.com/gibbok/animate.js.git"
   },
+  "scripts": {
+    "start": "npx http-server"
+  },
   "author": "GibboK",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "connect": "^3.5.0",
-    "open": "^0.0.5",
-    "gulp-connect": "^5.0.0"
+    "gulp-connect": "^5.0.0",
+    "open": "^0.0.5"
   }
 }
