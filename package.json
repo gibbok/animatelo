@@ -19,8 +19,12 @@
     "url": "git+https://github.com/gibbok/animate.js.git"
   },
   "scripts": {
-    "start": "npx http-server"
+    "start": "npx http-server",
+    "deploy": "npx gh-pages -d ./"
   },
   "author": "GibboK",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
