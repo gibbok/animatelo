@@ -22,9 +22,5 @@
     "start": "npx http-server"
   },
   "author": "GibboK",
-  "license": "MIT",
-  "devDependencies": {
-    "gulp-connect": "^5.0.0",
-    "open": "^0.0.5"
-  }
+  "license": "MIT"
 }

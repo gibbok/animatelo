@@ -29,81 +29,11 @@
         <script src="//cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js"></script>
         <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
         <script src="index.js"></script>
-        <script>
-            silktideCookieBannerManager.updateCookieBannerConfig({
-                background: {
-                    showBackground: true,
-                },
-                cookieIcon: {
-                    position: "bottomLeft",
-                },
-                cookieTypes: [
-                    {
-                        id: "analytics",
-                        name: "Analytics",
-                        description:
-                            "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
-                        required: false,
-                        onAccept: function () {
-                            gtag("consent", "update", {
-                                analytics_storage: "granted",
-                            });
-                            dataLayer.push({
-                                event: "consent_accepted_analytics",
-                            });
-                        },
-                        onReject: function () {
-                            gtag("consent", "update", {
-                                analytics_storage: "denied",
-                            });
-                        },
-                    },
-                ],
-                text: {
-                    banner: {
-                        description:
-                            '<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href="https://your-website.com/cookie-policy" target="_blank">Cookie Policy.</a></p>',
-                        acceptAllButtonText: "Accept all",
-                        acceptAllButtonAccessibleLabel: "Accept all cookies",
-                        rejectNonEssentialButtonText: "Reject non-essential",
-                        rejectNonEssentialButtonAccessibleLabel:
-                            "Reject non-essential",
-                        preferencesButtonText: "Preferences",
-                        preferencesButtonAccessibleLabel: "Toggle preferences",
-                    },
-                    preferences: {
-                        title: "Customize your cookie preferences",
-                        description:
-                            "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
-                        creditLinkText: "Get this banner for free",
-                        creditLinkAccessibleLabel: "Get this banner for free",
-                    },
-                },
-            });
-        </script>
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i["GoogleAnalyticsObject"] = r;
-                ((i[r] =
-                    i[r] ||
-                    function () {
-                        (i[r].q = i[r].q || []).push(arguments);
-                    }),
-                    (i[r].l = 1 * new Date()));
-                ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m);
-            })(
-                window,
-                document,
-                "script",
-                "https://www.google-analytics.com/analytics.js",
-                "ga",
-            );
-            ga("create", "UA-99562743-1", "auto");
-            ga("send", "pageview");
-        </script>
+        <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "4092655eaa3c4bad8d5a8d37a8e44d58"}'
+        ></script>
     </head>
 
     <body>
